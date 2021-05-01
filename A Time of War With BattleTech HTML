@@ -1,0 +1,3962 @@
+<input type="radio" name="attr_tab" class="tab tab1" value="1" title="Personal Data" checked="checked"/>
+<input type="radio" name="attr_tab" class="tab tab2" value="2" title="Attributes"/>
+<input type="radio" name="attr_tab" class="tab tab3" value="3" title="Skills"/>
+<input type="radio" name="attr_tab" class="tab tab4" value="4" title="Inventory"/>
+<input type="radio" name="attr_tab" class="tab tab5" value="5" title="Personal Combat"/>
+<input type="radio" name="attr_tab" class="tab tab6" value="6" title="Miscellaneous Data"/>
+<input type="radio" name="attr_tab" class="tab tab7" value="7" title="BattleMech"/>
+
+
+
+<input type="hidden" name="attr_btatow_sheet_version" value="1"/>
+
+
+
+
+
+
+
+
+<!-- Personal Data -->
+<div class="tab-content tab1">
+    <h1>Character Dossier and Finance</h1>
+
+    <div class="wrapper">
+        <div class="section">
+		<div class="flexrow">
+			<div class="movementgrid">
+
+				<h3>Character Name:</h3><input type="text" name="attr_character_name" style="width:500px;" /> </h3>
+			</div>
+
+<!-- Start of Folders00 pic -->
+<div class="movementgrid">
+	<div class="TopFolderTabs0-image">
+		<div class="sheet-input-field2">
+
+
+
+
+
+<select name="attr_CurrentAffiliationOption">
+  <option value="A" selected="selected">None/Independent</option>
+  <option value="B">Mercenary (Generic)</option>
+</select>
+
+
+</div>
+	</div>
+		</div>
+<!-- End of Folders00 pic -->
+
+
+<div class="CurrentAffiliationOption">	1  <display={@CurrentAffiliationOption}>    </div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+<div class="BLUEwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Blue Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+    <div class="wrapper">
+        <div class="section">
+
+
+
+            <div class="sheet-input-field2">
+                Birth Affiliation <br><input type="text" name="attr_birthaffiliation" style="width:315px;">
+            </div>
+
+            <div class="sheet-input-field2">
+                Birth Sub-Affiliation, Faction, Unit, District, or Area <br><input type="text" name="attr_currentsubaffiliation" style="width:315px;">
+            </div>
+
+            <div class="sheet-input-field2">
+                Current Affiliation <br><input type="text" name="attr_newaffiliation" style="width:315px;">
+            </div>
+
+            <div class="sheet-input-field2">
+                Current Area, Lance, Faction, District, or Area <br><input type="text" name="attr_newsubaffiliation" style="width:315px;">
+            </div>
+
+
+
+
+<!-- Converts Inches to CM Data -->
+
+            <div class="sheet-input-field2">
+                Height (inches) to (cm) <br>
+		<input type="number" name="attr_HeightIN" value="72" style="width:75px;">
+
+     		<input type="number" name="attr_HeightCM" value="@{HeightIN}*2.54" disabled style="width:100px;">
+
+            </div>
+
+<!-- Converts Inches to CM Data -->
+
+
+<!-- Converts LBS to KG Data -->
+
+            <div class="sheet-input-field2">
+                Weight (lbs) to (kg) <br>
+		<input type="number" name="attr_WeightLBS" value="225" style="width:75px;">
+
+     		<input type="number" name="attr_WeightKG" value="@{WeightLBS}*0.4536" disabled style="width:120px;" >
+
+            </div>
+
+<!-- Converts LBS to KG Data -->
+
+
+            <div class="sheet-input-field2">
+                Age <br><input type="number" name="attr_age" value="16" style="width:50px;">
+            </div>
+
+            <div class="sheet-input-field2">
+                Hair <br><input type="text" name="attr_Hair" style="width:150px;">
+            </div>
+            <div class="sheet-input-field2">
+                Eyes <br><input type="text" name="attr_Eyes" style="width:150px;">
+            </div>
+            <div class="sheet-input-field2">
+                Description <br><input type="text" name="attr_description" style="width:475px;">
+            </div>
+
+            <div class="sheet-input-field2">
+                Siblings (1) <br><input type="text" name="attr_Siblings1" style="width:200px;">
+            </div>
+            <div class="sheet-input-field2">
+                Siblings (2) <br><input type="text" name="attr_Siblings2" style="width:200px;">
+            </div>
+            <div class="sheet-input-field2">
+                Siblings (3) <br><input type="text" name="attr_Siblings3" style="width:200px;">
+            </div>
+        </div>
+
+        <div class="input-field" style="width:695px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Currency:</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>C-Bills</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:355px;" type="number" name="attr_Cbills" value="0">
+                            </td>
+                        </tr>
+
+                         <tr>
+                            <th>Ryu (K-Bills)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:355px;" type="number" name="attr_KBills" value="0">
+                            </td>
+                        </tr>
+                         <tr>
+                            <th>Pound (D-Bills)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:375px;" type="number" name="attr_DBills" value="0">
+                            </td>
+                        </tr>
+                         <tr>
+                            <th>Yuan (L-Bills)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:375px;" type="number" name="attr_LBills" value="0">
+                            </td>
+                        </tr>
+                        </tr>
+                         <tr>
+                            <th>Eagle (M-Bills)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:375px;" type="number" name="attr_MBills" value="0">
+                            </td>
+                        </tr>
+                         <tr>
+                            <th>Kroner (S-Bills) (Steiner)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:375px;" type="number" name="attr_SBills" value="0">
+                            </td>
+                        </tr>
+                         <tr>
+                            <th>S7-Bills (solaris Script)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:375px;" type="number" name="attr_S7Bills" value="0">
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+        </div>
+
+
+        <div>
+            <div class="sheet-input-field" style="width:755px;margin-top:8px;padding-top:10px;background-color:#698888">
+                <span style="font-size:large; padding-right:570px">Traits</span>
+                <fieldset class="repeating_traits">
+                    <table class="sheet-section-table2">
+                        <tr>
+                            <th>Trait</th>
+                            <th>TP</th>
+                            <th>Page Ref.</th>
+                            <th>XP</th>
+                            <th>Notes</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:200px;" type="text" name="attr_trait">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_traittp"
+                                       value="floor(@{traitxp}/100)" disabled="true">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_traitpr">
+                            </td>
+                            <td>
+                                <input style="width:75px;" type="number" name="attr_traitxp">
+                            </td>
+                            <td>
+                                <input style="width:225px;" type="text" name="attr_traitnotes">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+			<h3>Trait Specific XP:  <input type="number" name="attr_traitonlyxp" value="0" style="width:50px;"></h3>
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Brown Hex-->
+
+
+        <div>
+            <div class="sheet-input-field" style="width:755px;margin-top:8px;padding-top:10px;background-color:#AD855C">
+                <span style="font-size:large">Biography</span><br>
+                <fieldset class="repeating_Bio">
+                    <table class="sheet-section-table2">
+                        <tr>
+                            <th>Life Module</th>
+                            <th>Notes</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:250px;" type="text" name="attr_lifemod">
+                            </td>
+                            <td>
+                                <input style="width:400px;" type="text" name="attr_lifenote">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Blue Hex-->
+
+
+    </div>
+</div>
+
+
+
+<!-- Attributes tab start-->
+<div class="tab-content tab2"><!-- START of Attributes tab-->
+    <h1>Attributes</h1>
+    <div class="wrapper">
+
+		<div class="flexrow">
+			<div class="movementgrid">
+				<h3>Character Name:</h3><input type="text" name="attr_character_name" style="width:500px;" /> </h3>
+			</div>
+		</div>
+
+
+
+<div class="GREENwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Green Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+
+        <div class="section">
+
+            <div class="col1">
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Unused Experience Points</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Unallocated XP</th>
+                            <th>Rebate XP</th>
+                        </tr>
+                        <tr>
+                            <td>
+				<input style="width:50px;" type="number" value ="4150" name="attr_unallocatedxp">
+                            </td>
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_rebatexp">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Can be used before or after Character Creation.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Only Used for Character Creation.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+			<div class="movementgrid">
+                                <h3>Maximum BOD:<input style="width:50px;" type="number" name="attr_maxbody" value="@{body}" disabled="true"> </h3>
+                                <h3>Maximum WIL:<input style="width:50px;" type="number" name="attr_maxbody" value="@{will}" disabled="true"> </h3>
+
+				<h3>Current BOD:  <input type="number" name="attr_currentbod" value="@{body}" style="width:50px;"> </h3>
+				<h3>Current WIL:  <input type="number" name="attr_currentwil" value="@{will}" style="width:50px;"> </h3>
+				Current BOD or WIL can not exceed their Maximum value or go into negative.
+			</div>
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Brown Hex-->
+
+
+
+
+
+
+	<div class="movementgrid">
+
+<!--- ZINJBattleMech START -->
+            <div class="col1">
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Consciousness</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Consciousness Level</th>
+                            <th>Positive Modifiers</th>
+                            <th>Negative Modifiers</th>
+                            <th>Target Number</th>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+		<div class="mechdata physconsole flexrow">
+	<div class="movementgrid">
+			<h2>Consciousness:</h2>
+			<div class="radio-container zero">
+				<input type="radio" name="attr_TNConsciousness" value="1" checked><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="3"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="5"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="7"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="10"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="11"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="666"><span></span>
+			</div>
+	</div>
+		</div>
+			Consciousness Level:  
+                            </td>
+
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_POSConsciousnessMOD">
+                            </td>
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_NEGConsciousnessMOD">
+                            </td>
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_TNConsciousness">
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Consciousness Level.  Level 0 = No Fatigue Damage.  Level 6 = death.
+                <div class="medical-image" style="width:200px;margin-top:10px;padding-top:200px;">
+		</div>
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add any positive Modifiers here, such as TOUGHNESS [trait].
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add any Negative Modifiers here, such as GLASS JAW [trait].  Enter as a positive number, Roll20 does not like the use of negatives.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter Target Number, based on the level.  
+				Level 0: TN=1
+				Level 1: TN=3
+				Level 2: TN=5
+				Level 3: TN=7
+				Level 4: TN=10
+				Level 5: TN=11
+				Level 6: DEATH
+                            </td>
+                        </tr>
+                    </table>
+
+<button type="roll" value="/roll 2d6 + @{POSConsciousnessMOD} - @{NEGConsciousnessMOD} - @{TNConsciousness}" name="roll_ConsciousnessCheck">Roll for Consciousness Check</button>
+
+
+                </div>
+	</div>
+<!--- ZINJBattleMech END -->
+
+	</div>
+
+
+
+
+
+
+
+
+            <div class="col">
+                <div class="input-field" style="width:328px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Attributes</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Score</th>
+                            <th>Link</th>
+                            <th>XP</th>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#303030;color:white">
+                                <button
+                                        type="roll"
+                                        class="blank-roll-button"
+                                        name="roll_strength_check"
+                                        title=%{CharName|strength_check}
+                                        value='Strength Check
+                                    Margin of Success: [[2d6 + @{strength}[MOD] - 12[TN]]]'
+                                >
+                                    STR
+                                </button>
+                            </td>
+                            <td>
+                                <span name="attr_strength" title="@{strength}"></span>
+                                <input type="hidden" name="attr_strength" value="1">
+                            </td>
+                            <td>
+                                <span name="attr_strength_link" title="@{strength_link}"></span>
+                                <input type="hidden" name="attr_strength_link" value="-2">
+                            </td>
+                            <td>
+                                <input type="number" name="attr_strength_xp" value="100" title="@{strength_xp}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#303030;color:white">
+                                <button
+                                        type="roll"
+                                        class="blank-roll-button"
+                                        name="roll_body_check"
+                                        title=%{CharName|body_check}
+                                        value='Body Check
+                                    Margin of Success: [[2d6 + @{body}[MOD] - 12[TN]]]'
+                                >
+                                    BOD
+                                </button>
+                            </td>
+                            <td>
+                                <span name="attr_body" title="@{body}"></span>
+                                <input type="hidden" name="attr_body" value="1">
+                            </td>
+                            <td>
+                                <span name="attr_body_link" title="@{body_link}"></span>
+                                <input type="hidden" name="attr_body_link" value="-2">
+                            </td>
+                            <td>
+                                <input type="number" name="attr_body_xp" value="100" title="@{body_xp}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#303030;color:white">
+                                <button
+                                        type="roll"
+                                        class="blank-roll-button"
+                                        name="roll_reflex_check"
+                                        title=%{CharName|reflex_check}
+                                        value='Reflex Check
+                                    Margin of Success: [[2d6 + @{reflex}[MOD] - 12[TN]]]'
+                                >
+                                    RFL
+                                </button>
+                            </td>
+                            <td>
+                                <span name="attr_reflex" title="@{reflex}"></span>
+                                <input type="hidden" name="attr_reflex" value="1">
+                            </td>
+                            <td>
+                                <span name="attr_reflex_link" title="@{reflex_link}"></span>
+                                <input type="hidden" name="attr_reflex_link" value="-2">
+                            </td>
+                            <td>
+                                <input type="number" name="attr_reflex_xp" value="100" title="@{reflex_xp}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#303030;color:white">
+                                <button
+                                        type="roll"
+                                        class="blank-roll-button"
+                                        name="roll_dexterity_check"
+                                        title=%{CharName|dexterity_check}
+                                        value='Dexterity Check
+                                    Margin of Success: [[2d6 + @{dexterity}[MOD] - 12[TN]]]'
+                                >
+                                    DEX
+                                </button>
+                            </td>
+                            <td>
+                                <span name="attr_dexterity" title="@{dexterity}"></span>
+                                <input type="hidden" name="attr_dexterity" value="1">
+                            </td>
+                            <td>
+                                <span name="attr_dexterity_link" title="@{dexterity_link}"></span>
+                                <input type="hidden" name="attr_dexterity_link" value="-2">
+                            </td>
+                            <td>
+                                <input type="number" name="attr_dexterity_xp" value="100" title="@{dexterity_xp}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#303030;color:white">
+                                <button
+                                        type="roll"
+                                        class="blank-roll-button"
+                                        name="roll_intelligence_check"
+                                        title=%{CharName|intelligence_check}
+                                        value='Intelligence Check
+                                    Margin of Success: [[2d6 + @{intelligence}[MOD] - 12[TN]]]'
+                                >
+                                    INT
+                                </button>
+                            </td>
+                            <td>
+                                <span name="attr_intelligence" title="@{intelligence}"></span>
+                                <input type="hidden" name="attr_intelligence" value="1">
+                            </td>
+                            <td>
+                                <span name="attr_intelligence_link" title="@{intelligence_link}"></span>
+                                <input type="hidden" name="attr_intelligence_link" value="-2">
+                            </td>
+                            <td>
+                                <input type="number" name="attr_intelligence_xp" value="100" title="@{intelligence_xp}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#303030;color:white">
+                                <button
+                                        type="roll"
+                                        class="blank-roll-button"
+                                        name="roll_will_check"
+                                        title=%{CharName|will_check}
+                                        value='Will Check
+                                    Margin of Success: [[2d6 + @{will}[MOD] - 12[TN]]]'
+                                >
+                                    WIL
+                                </button>
+                            </td>
+                            <td>
+                                <span name="attr_will" title="@{will}"></span>
+                                <input type="hidden" name="attr_will" value="1">
+                            </td>
+                            <td>
+                                <span name="attr_will_link" title="@{will_link}"></span>
+                                <input type="hidden" name="attr_will_link" value="-2">
+                            </td>
+                            <td>
+                                <input type="number" name="attr_will_xp" value="100" title="@{will_xp}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#303030;color:white">
+                                <button
+                                        type="roll"
+                                        class="blank-roll-button"
+                                        name="roll_charisma_check"
+                                        title=%{CharName|charisma_check}
+                                        value='Charisma Check
+                                    Margin of Success: [[2d6 + @{charisma}[MOD] - 12[TN]]]'
+                                >
+                                    CHA
+                                </button>
+                            </td>
+                            <td>
+                                <span name="attr_charisma" title="@{charisma}"></span>
+                                <input type="hidden" name="attr_charisma" value="1">
+                            </td>
+                            <td>
+                                <span name="attr_charisma_link" title="@{charisma_link}"></span>
+                                <input type="hidden" name="attr_charisma_link" value="-2">
+                            </td>
+                            <td>
+                                <input type="number" name="attr_charisma_xp" value="100" title="@{charisma_xp}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#303030;color:white">
+                                <button
+                                        type="roll"
+                                        class="blank-roll-button"
+                                        name="roll_edge_check"
+                                        title=%{CharName|edge_check}
+                                        value='Edge Check
+                                    Margin of Success: [[2d6 + @{edge}[MOD] - 12[TN]]]'
+                                >
+                                    EDG
+                                </button>
+                            </td>
+                            <td>
+                                <span name="attr_edge" title="@{edge}"></span>
+                                <input type="hidden" name="attr_edge" value="1">
+                            </td>
+                            <td>
+                                <span name="attr_edge_link" title="@{edge_link}"></span>
+                                <input type="hidden" name="attr_edge_link" value="-2">
+                            </td>
+                            <td>
+                                <input type="number" name="attr_edge_xp" value="100" title="@{edge_xp}">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+		</div>
+	</div>
+</div><!-- END Pretty Green Hex-->
+
+
+
+
+
+
+<div class="MANGOwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty mango Hex--><!-- START ZINJG MANGO Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+ <div class="col"><!-- Start of Single Attribute Check-->
+                <div class="input-field" style="width:375px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Single Attribute Check</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Attribute Level</th>
+                            <th>Positive Modifiers</th>
+                            <th>Negative Modifiers</th>
+                            <th>Target Number</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_SingleATT" value="0">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_PosSingleATTMod" value="0">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_NegSingleATTMod" value="0">
+                            </td>
+                            <td>
+Target Number (roll to get or higher):<input type="number" name="attr_SmallArmsTNValue" value="12" disabled style="width:50px;">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Single Attribute Level
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter any Positive Modifiers (if any)
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter any Negative Modifiers (if any) as a positive number, Roll20 does not like the use of negatives.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                The Target Number for a single Attribute check area.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+<button type="roll" value="/roll 2d6 + @{SingleATT} + @{NegSingleATTMod} - @{NegSingleATTMod} -12" name="roll_SingleATTRoll">Roll for the Single Attribute Check</button>
+         </div><!-- End of Single Attribute Check-->
+
+	</div>
+	</div>
+</div><!-- END Pretty Mango Hex-->
+
+<div class="MANGOwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Mango Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+ <div class="col"><!-- Start of Double Attribute Check-->
+                 <div class="input-field" style="width:325px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Double Attribute Check</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Attribute Level A</th>
+                            <th>Attribute Level B</th>
+                            <th>Positive Modifiers</th>
+                            <th>Negative Modifiers</th>
+                            <th>Target Number</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_DoubleATTA" value="0">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_DoubleATTB" value="0">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_PosDoubleATTMod" value="0">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_NegDoubleATTMod" value="0">
+                            </td>
+                            <td>
+Target Number (roll to get or higher):<input type="number" name="attr_SmallArmsTNValue" value="18" disabled style="width:50px;">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Double Attribute Level A
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Double Attribute Level B
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter any Positive Modifiers (if any)
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter any Negative Modifiers (if any) as a positive number, Roll20 does not like the use of negatives.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                The Target Number for a Double Attribute check area.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+<button type="roll" value="/roll 2d6 + @{DoubleATTA} + @{DoubleATTB} + @{NegDoubleATTMod} - @{NegDoubleATTMod} -18" name="roll_SingleATTRoll">Roll for the Double Attribute Check</button>
+         </div><!-- End of Double Attribute Check-->
+
+	</div>
+	</div>
+</div><!-- END Pretty MANGO Hex-->
+
+
+<div class="GREENwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Green Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+            <div class="col">
+                <div class="input-field" style="width:328px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Condition Monitor</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Standard Health</th>
+                            <th>Fatigue Health</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_smaxhealth"
+                                       value="@{currentbod}*2" disabled="true">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_fmaxhealth"
+                                       value="@{currentwil}*2" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Max Standard Health = BOD x 2
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Max Fatigue Health = WIL x 2
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="input-field" style="width:328px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Movement MP (Meters per Turn)</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Walk (MP)</th>
+                            <th>Run/Evade</th>
+                            <th>Sprint</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_MP"
+                                       value="@{strength}+@{reflex}" disabled="true">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_run">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_sprint"
+                                       value="@{run}*2" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Walk = STR + RFL
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Run = 10 + STR + RFL + Running Skill Level
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Sprint = Run MP x 2
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Climb</th>
+                            <th>Crawl</th>
+                            <th>Swim</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_climb">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_crawl"
+                                       value="floor((@{strength}+@{reflex})/4)" disabled="true">
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_swim">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Climb = MP / 2 + Climbing Skill Level
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Crawl = MP / 4
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Swim = MP + Swimming Skill Level
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Blue Hex-->
+
+        </div>
+    </div>
+
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+			<h3>Attribute Specific XP:  <input type="number" name="attr_attributeonlyxp" value="0" style="width:50px;"></h3>
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Brown Hex-->
+
+</div><!-- END of Attributes tab-->
+
+
+
+
+
+<!-- SKILLS -->
+
+<div class="tab-content tab3 main"><!-- inventory skill tab START-->
+
+    <h1>Skills - Higher Number Rolls are Better on most skill checks.</h1>
+
+    <div class="wrapper">
+
+		<div class="flexrow">
+			<div class="movementgrid">
+				<h3>Character Name:</h3><input type="text" name="attr_character_name" style="width:500px;" /> </h3>
+			</div>
+		</div>
+
+
+    <h3>Skills</h3>
+
+
+
+<div class="sheet-input-field" style="width:695px;margin-top:8px;padding-top:10px;background-color:#0346FF">
+	<h2>Primary Language:  <input style="width:350px;" type="text" name="attr_primelang"> </h2>
+	<h3>Primary Language Notes:  <input style="width:350px;" type="text" name="attr_primelangnotes"></h3>
+</div>
+
+
+<div class="sheet-input-field" style="width:695px;margin-top:8px;padding-top:10px;background-color:#00AD57">
+	<h2>Secondary Language:  <input style="width:350px;" type="text" name="attr_secondlang"> </h2>
+	<h3>Secondary Language Notes:  <input style="width:350px;" type="text" name="attr_secondlangnotes"></h3>
+</div>
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+			<h2>AToW BattleMech Gunnery Skill: <input type="number" name="attr_AToWBattleMechGunnery" value="0" style="width:50px;">
+			    BattleTech BattleMech Gunnery Skill: <input type="number" name="attr_BTBattleMechGunnery" value="8-@{AToWBattleMechGunnery}" disabled style="width:50px;"> </h2>
+			<h3>*Manually get the skill level from the table below.</h3>
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Brown Hex-->
+
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+			<h2>AToW BattleMech Pilot Skill: <input type="number" name="attr_AToWBattleMechPilot" value="0" style="width:125px;">
+			    BattleTech Pilot Skill: <input type="number" name="attr_BTBattleMechPilot" value="8-@{AToWBattleMechPilot}" disabled style="width:125px;"> </h2>
+			<h3>*Manually get the skill level from the table below.</h3>
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Brown Hex-->
+
+
+
+
+
+<div class="sheet-input-field" style="width:695px;margin-top:8px;padding-top:10px;background-color:#B0B021">
+
+   	<input type="radio" value="-2" name="attr_learning_speed" class="skills-labels">Fast Learner</input>
+    	<input type="radio" value="2" name="attr_learning_speed" class="skills-labels">Slow Learner</input>
+    	<input type="radio" value="0" name="attr_learning_speed" checked="true" class="skills-labels">Standard</input>
+
+
+    <div class="skills-headings skills-container">
+        <span class="skills skill skills-headings left">Skill</span>
+        <span class="skills skills-skill-level">Lvl</span>
+        <span class="skills skills-linked-attributes">Links</span>
+        <span class="skills skills-modifier">Mod</span>
+        <span class="skills skills-tnc">TN/C</span>
+        <span class="skills skills-xp">XP</span>
+        <span class="skills skill-roll"></span>
+    </div>
+    <fieldset class="repeating_skills">
+        <div class="skills-container">
+            <select name="attr_skill" class="skills skill content" title="@{repeating_skills_$id_skill}">
+                <option value="acrobatics_free_fall">Acrobatics/Free-Fall</option>
+                <option value="acrobatics_gymnastics">Acrobatics/Gymnastics</option>
+                <option value="acting">Acting</option>
+                <option value="administration">Administration</option>
+                <option value="animal_handling_herding">Animal Handling/Herding</option>
+                <option value="animal_handling_riding">Animal Handling/Riding</option>
+                <option value="animal_handling_training">Animal Handling/Training</option>
+                <option value="appraisal">Appraisal</option>
+                <option value="archery">Archery</option>
+                <option value="art">Art</option>
+                <option value="artillery">Artillery</option>
+                <option value="career">Career</option>
+                <option value="climbing">Climbing</option>
+                <option value="communications_black_box">Communications/Black Box</option>
+                <option value="communications_conventional">Communications/Conventional (EM)</option>
+                <option value="communications_hyperpulse_generator">Communications/Hyperpulse Generator</option>
+                <option value="computers">Computers</option>
+                <option value="cryptography">Cryptography</option>
+                <option value="demolitions">Demolitions</option>
+                <option value="disguise">Disguise</option>
+                <option value="driving_ground_vehicles">Driving/Ground Vehicles</option>
+                <option value="driving_rail_vehicles">Driving/Rail Vehicles</option>
+                <option value="driving_sea_vehicles">Driving/Sea Vehicles</option>
+                <option value="escape_artist">Escape Artist</option>
+                <option value="forgery">Forgery</option>
+                <option value="gunnery_aerospace">Gunnery/Aerospace</option>
+                <option value="gunnery_air_vehicle">Gunnery/Air Vehicle</option>
+                <option value="gunnery_battlesuit">Gunnery/Battlesuit</option>
+                <option value="gunnery_ground_vehicle">Gunnery/Ground Vehicle</option>
+                <option value="gunnery_mech">Gunnery/'Mech</option>
+                <option value="gunnery_protomech">Gunnery/ProtoMech</option>
+                <option value="gunnery_sea_vehicle">Gunnery/Sea Vehicle</option>
+                <option value="gunnery_spacecraft">Gunnery/Spacecraft</option>
+                <option value="gunnery_turret">Gunnery/Turret</option>
+                <option value="interest">Interest</option>
+                <option value="interrogation">Interrogation</option>
+                <option value="investigation">Investigation</option>
+                <option value="language">Language</option>
+                <option value="leadership">Leadership</option>
+                <option value="martial_arts">Martial Arts</option>
+                <option value="medtech_general">MedTech/General</option>
+                <option value="medtech_veterinary">MedTech/Veterinary</option>
+                <option value="melee_weapons">Melee Weapons</option>
+                <option value="navigation_air">Navigation/Air</option>
+                <option value="navigation_ground">Navigation/Ground</option>
+                <option value="navigation_kf_jump">Navigation/K-F Jump</option>
+                <option value="navigation_sea">Navigation/Sea</option>
+                <option value="navigation_space">Navigation/Space</option>
+                <option value="negotiation">Negotiation</option>
+                <option value="perception">Perception</option>
+                <option value="piloting_aerospace">Piloting/Aerospace</option>
+                <option value="piloting_air_vehicle">Piloting/Air Vehicle</option>
+                <option value="piloting_battlesuit">Piloting/Battlesuit</option>
+                <option value="piloting_ground_vehicle">Piloting/Ground Vehicle</option>
+                <option value="piloting_mech">Piloting/'Mech</option>
+                <option value="piloting_protomech">Piloting/ProtoMech</option>
+                <option value="piloting_rail_vehicle">Piloting/Rail Vehicle</option>
+                <option value="piloting_sea_vehicle">Piloting/Sea Vehicle</option>
+                <option value="piloting_spacecraft">Piloting/Spacecraft</option>
+                <option value="prestidigitation_pick_pocket">Prestidigitation/Pick Pocket</option>
+                <option value="prestidigitation_quickdraw">Prestidigitation/Quickdraw</option>
+                <option value="prestidigitation_sleight_of_hand">Prestidigitation/Sleight of Hand</option>
+                <option value="protocol">Protocol</option>
+                <option value="running">Running</option>
+                <option value="science">Science</option>
+                <option value="security_systems_electronic">Security Systems/Electronic</option>
+                <option value="security_systems_mechanical">Security Systems/Mechanical</option>
+                <option value="sensor_operations">Sensor Operations</option>
+                <option value="small_arms">Small Arms</option>
+                <option value="stealth">Stealth</option>
+                <option value="strategy">Strategy</option>
+                <option value="streetwise">Streetwise</option>
+                <option value="support_weapons">Support Weapons</option>
+                <option value="surgery_general">Surgery/General</option>
+                <option value="surgery_veterinary">Surgery/Veterinary</option>
+                <option value="survival">Survival</option>
+                <option value="swimming">Swimming</option>
+                <option value="tactics_air">Tactics/Air</option>
+                <option value="tactics_infantry">Tactics/Infantry</option>
+                <option value="tactics_land">Tactics/Land</option>
+                <option value="tactics_sea">Tactics/Sea</option>
+                <option value="tactics_space">Tactics/Space</option>
+                <option value="technician_aeronautics">Technician/Aeronautics</option>
+                <option value="technician_cybernetics">Technician/Cybernetics</option>
+                <option value="technician_electronics">Technician/Electronics</option>
+                <option value="technician_jets">Technician/Jets</option>
+                <option value="technician_mechanical">Technician/Mechanical</option>
+                <option value="technician_myomer">Technician/Myomer</option>
+                <option value="technician_nuclear">Technician/Nuclear</option>
+                <option value="technician_weapons">Technician/Weapons</option>
+                <option value="thrown_weapons_blades">Thrown Weapons/Blades</option>
+                <option value="thrown_weapons_blunt_weapons">Thrown Weapons/Blunt Weapons</option>
+                <option value="tracking_urban">Tracking/Urban</option>
+                <option value="tracking_wilds">Tracking/Wilds</option>
+                <option value="training">Training</option>
+                <option value="zero_g_operations">Zero-G Operations</option>
+            </select>
+
+
+            <input type="text" name="attr_sub_skill" class="skills skill content" title="@{repeating_skills_$id_sub_skill}">
+                <span name="attr_skill_level" class="skills content skills-labels skills-skill-level" title="@{repeating_skills_$id_skill_level}"></span>
+                <input type="hidden" name="attr_skill_level">
+                <span name="attr_skill_linked_attributes" class="skills content skills-labels skills-linked-attributes" title="@{repeating_skills_$id_skill_linked_attributes}"></span>
+                <input type="hidden" name="attr_skill_linked_attributes">
+                <span name="attr_skill_modifierRoll" class="skills content skills-labels skills-modifier" title="@{repeating_skills_$id_skill_modifierRoll}"></span>
+                <input type="hidden" name="attr_skill_modifierRoll">
+                <span name="attr_skill_tnc" class="skills content skills-labels skills-tnc" title="@{repeating_skills_$id_skill_tnc}"></span>
+                <input type="hidden" name="attr_skill_tnc">
+                <input type="hidden" name="attr_target_number">
+            <input type="number" name="attr_skill_xp" class="skills content skills-labels skills-xp" title="@{repeating_skills_$id_skill_xp}">
+            <input type="hidden" name="attr_skill_roll_value" value="Acrobatics/Free-Fall Skill Check
+                                        Margin of Success: [[2d6 + @{skill_modifierRoll}[MOD] - @{target_number}[TN]]]">
+            <span class="skills skills-labels">
+                <button type="roll" name="roll_skill_check" value="@{skill_roll_value}" class="skill-roll skills-labels d6" title="@{repeating_skills_$id_skill_check}">l</button>
+            </span>
+        </div>
+    </fieldset>
+
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+			<h3>Skill Specific XP:  <input type="number" name="attr_skillonlyxp" value="0" style="width:50px;"></h3>
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Brown Hex-->
+
+
+	    </div>
+    </div>
+</div><!-- skill tab END-->
+
+
+
+
+
+
+
+<!-- inventory Data START-->
+<div class="sheet-tab-content sheet-tab4">
+    <h1>Inventory</h1>
+    <div class="sheet-wrapper">
+		<div class="flexrow">
+			<div class="movementgrid">
+				<h3>Character Name:</h3><input type="text" name="attr_character_name" style="width:500px;" /> </h3>
+			</div>
+		</div>
+        <div class="sheet-section">
+            <div>
+                <div class="sheet-input-field"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:#7A7A52">
+                    <span style="font-size:large">Encumbrance</span><br>
+                    <table class="sheet-section-table2">
+                        <tr>
+                            <th>Gear Weight</th>
+                            <th>STR</th>
+                            <th>Encumbered</th>
+                            <th>Very Encumbered</th>
+                            <th>Overloaded</th>
+                            <th>Notes</th>
+                        </tr>
+                        <tr>
+                            <td>
+<!-- Converts KG to LBS Data -->
+                                <h2>kg:<input style="width:50px;" type="number" value="10" name="attr_gearweightkg"></h2>
+                                <h3>to lbs:<input type="number" name="attr_gearweightlbs" value="@{gearweightkg}*2.2" disabled="true" style="width:50px;" ></h3>
+<!-- Ends Converts KG to LBS Data -->
+                            </td>
+                            <td>
+                                <input style="width:35px;" type="number" name="attr_encombstr"
+                                       value="floor(@{strength_xp}/100)" disabled="true">
+                            </td>
+                            <td>
+<!-- Converts KG to LBS Data -->
+                                <h2>kg:<input style="width:50px;" type="number" value="10" name="attr_encumbkg"></h2>
+                                <h3>to lbs:<input type="number" name="attr_encumblbs" value="@{encumbkg}*2.2" disabled="true" style="width:50px;" ></h3>
+<!-- Ends Converts KG to LBS Data -->
+                            </td>
+                            <td>
+<!-- Converts KG to LBS Data -->
+                                <h2>kg:<input style="width:50px;" type="number" value="10" name="attr_veryencumbkg"></h2>
+                                <h3>to lbs:<input type="number" name="attr_eryencumblbs" value="@{veryencumbkg}*2.2" disabled="true" style="width:50px;" ></h3>
+<!-- Ends Converts KG to LBS Data -->
+                            </td>
+                            <td>
+<!-- Converts KG to LBS Data -->
+                                <h2>kg:<input style="width:50px;" type="number" value="10" name="attr_overloadkg"></h2>
+                                <h3>to lbs:<input type="number" name="attr_overloadlbs" value="@{overloadkg}*2.2" disabled="true" style="width:50px;" ></h3>
+<!-- Ends Converts KG to LBS Data -->
+                            </td>
+                            <td>
+                                <input style="width:200px;" type="text" name="attr_encombnotes">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sheet-input-field"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:#FFA319">
+                    <span style="font-size:large">Inventory</span><br>
+                    <fieldset class="repeating_inventory">
+                        <table class="sheet-section-table2">
+                            <tr>
+                                <th>Item</th>
+                                <th>Location</th>
+                                <th>Weight (kg)</th>
+                                <th>Data</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:200px;" type="text" name="attr_item">
+                                </td>
+                                <td>
+                                    <input style="width:100px;" type="text" name="attr_itemloc">
+                                </td>
+                                <td>
+                                    <input style="width:50px;" type="text" name="attr_itemweight">
+                                </td>
+                                <td>
+                                    <input style="width:275px;" type="text" name="attr_itemdata">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+                <div class="sheet-input-field"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:#CC3300">
+                    <span style="font-size:large">Vehicle Data</span><br>
+                    <fieldset class="repeating_vehicle">
+                        <table class="sheet-section-table2">
+                            <tr>
+                                <th>Vehicle Model/Name</th>
+                                <th>Type</th>
+                                <th>Mass</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:405px;" type="text" name="attr_vehname">
+                                </td>
+                                <td>
+                                    <input style="width:150px;" type="text" name="attr_vehtype">
+                                </td>
+                                <td>
+                                    <input style="width:75px;" type="number" name="attr_vehmass">
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="sheet-section-table2">
+                            <tr>
+                                <th>Vehicle Traits</th>
+                                <th>Notes</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:400px;" type="text" name="attr_vehtrait">
+                                </td>
+                                <td>
+                                    <input style="width:250px;" type="text" name="attr_vehnotes">
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- inventory Data END-->
+
+
+
+<!-- Personal Combat Data -->
+<div class="tab-content tab5"><!-- START of Personal Combat Data tab-->
+    <h1>Personal Combat Data - Higher Number Rolls are Better</h1>
+    <div class="wrapper">
+
+		<div class="flexrow">
+			<div class="movementgrid">
+				<h3>Character Name:</h3><input type="text" name="attr_character_name" style="width:500px;" /> </h3>                                
+			</div>
+		</div>
+
+
+
+<div class="GREENwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Green Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+			<div class="movementgrid">
+                                <h3>Maximum Edge:<input style="width:50px;" type="number" name="attr_maxedge" value="@{edge}" disabled="true"> </h3>
+				Current Edge can not exceed Maximum Edge or go into negative.
+				<h3>Current Edge:  <input type="number" name="attr_currentedge" value="0" style="width:50px;"> </h3>
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Brown Hex-->
+
+
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+			<div class="movementgrid">
+                                <h3>Maximum BOD:<input style="width:50px;" type="number" name="attr_maxbody" value="@{body}" disabled="true"> </h3>
+                                <h3>Maximum WIL:<input style="width:50px;" type="number" name="attr_maxbody" value="@{will}" disabled="true"> </h3>
+
+				<h3>Current BOD:  <input type="number" name="attr_currentbod" value="@{body}" style="width:50px;"> </h3>
+				<h3>Current WIL:  <input type="number" name="attr_currentwil" value="@{will}" style="width:50px;"> </h3>
+				Current BOD or WIL can not exceed their Maximum value or go into negative.
+			</div>
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Brown Hex-->
+
+
+
+			</div>
+
+
+        <div class="section">
+
+
+            <div class="col">
+
+
+
+
+<div class="BLUEwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Blue Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">(Standard and Fatigue) Health and Movement MP (Meters per Turn)</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Standard Health</th>
+                            <th>Fatigue Health</th>
+                            <th>Melee (Unarmed)</th>
+                            <th>Walk (MP)</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_MP"
+                                       value="@{currentbod}*2" disabled="true">
+                                /<h3>H DMG:<input style="width:50px;" type="number" name="attr_hdamage" value="0"></h3>
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_fmaxhealth"
+                                       value="@{currentwil}*2" disabled="true">
+                                /<h3>F DMG:<input style="width:50px;" type="number" name="attr_fdamage" value="0"></h3>
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                (Winner’s STR ÷ 4) + (Winner’s MoS x 0.25)
+                            </td>
+                            <td>
+                                <input style="width:50px;" type="number" name="attr_MP"
+                                       value="@{strength}+@{reflex}" disabled="true">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Max Standard Health = BOD x 2
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Max Fatigue Health = WIL x 2
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                (Winner’s STR ÷ 4)† + (Winner’s MoS x 0.25)
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Walk = STR + RFL
+                            </td>
+                        </tr>
+
+
+                        <tr><!-- START of initiative Personal Combat Roll-->
+                            <th>Additional Initiative Modifiers</th>
+                            <th>Current Tactics Skill Level</th>
+                            <th>Current Leadership Skill Level</th>
+                            <th>Initiative Roll Button</th>
+                        </tr>
+                       <tr>
+                            <td>
+                                <h3>Add Positive Mod:<input style="width:50px;" type="number" name="attr_addmodinitiative" value="0"></h3>
+                                <h3>Add Negative Mod:<input style="width:50px;" type="number" name="attr_addneginitiative" value="0"></h3>
+                            </td>
+                            <td>
+				Current Tactics Skill level:  <input style="width:50px;" type="number" name="attr_CurrentTacticsSkill" value="0">
+                            </td>
+                            <td>
+				Current Leadership Skill level:  <input style="width:50px;" type="number" name="attr_LeadershipTacticsSkill" value="0">
+                            </td>
+                            <td>
+<button type="roll" value="/roll 2d6 + @{addmodinitiative} + @{CurrentTacticsSkill} + @{LeadershipTacticsSkill} - @{addneginitiative}" name="roll_initiative">Initiative</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add Positive Mod:  Enter Any Additional Positive Initiative Modifiers.  Add Negative Mod: Enter Any Additional Negative Initiative Modifiers. Enter the negative modifiers as a positive number.  Roll20 does not like the use of pure negative numbers in this format.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Sorry, get the skill level from the previous skill tab.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Sorry, get the skill level from the previous skill tab.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Roll for Initiative.  Higher is better.
+                            </td>
+                        </tr><!-- END of initiative Personal Combat Roll-->
+
+
+
+
+
+
+ 
+
+
+                    </table>
+                </div>
+            </div>
+
+
+<div class="BLUEwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Blue Hex--><!-- START of AToW toHit Small Arms-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+
+
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Small Arms ToHit Check (all numbers must be positive when entered)</span><br>
+                    <table class="section-table">
+
+
+ <tr><!-- START of AToW toHit Small Arms Roll-->
+                            <th>Small Arms Skill Level</th>
+                            <th>A T=Attacker and Target Movement</th>
+                            <th>O R=Other and Range</th>
+                            <th>N = Negative Modifier (if any)</th>
+                            <th>Fire BattleMech Weapon Button<</th>
+                        </tr>
+                       <tr>
+                            <td>
+			    AToW Small Arms Skill Level: <input type="number" name="attr_SmallArmsSkilllvelValue" value="0" style="width:50px;">
+                            </td>
+                            <td>
+			    Enter A: <input type="number" name="attr_SmallArmsAValue" value="0" style="width:50px;"> / Enter
+			    T: <input type="number" name="attr_SmallArmsTValue" value="0" style="width:50px;">
+                            </td>
+                            <td>
+			    Enter O: <input type="number" name="attr_SmallArmsOValue" value="0" style="width:50px;"> / Enter 
+			    R: <input type="number" name="attr_SmallArmsRValue" value="0" style="width:50px;">
+                            </td>
+                            <td>
+			    Enter N: <input type="number" name="attr_SmallArmsNValue" value="0" style="width:50px;"> 
+                            </td>
+                            <td>
+Target Number (roll to get or higher):<input type="number" name="attr_SmallArmsTNValue" value="7" disabled style="width:50px;">
+<input type="hidden" name="attr_FireBattleMechWeapon" value="0"/>
+<button type="roll" value="/roll 2d6 + @{SmallArmsSkilllvelValue} + @{SmallArmsAValue} + @{SmallArmsTValue} + @{SmallArmsOValue} + @{SmallArmsRValue} - @{SmallArmsNValue} -7" name="roll_FireSmallArmsWeapon">Fire Small Arms Weapon</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter your Small Arms Skill level.  Sorry, get this from the previous Skills tab. 
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add the Attacker's Movement Penalty under A.  Add the Target's Movement Penalty under A. (Both should be positive unless specifically directed otherwise.)
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Place Any Additional Sensor Roll Modifiers, including attribute modifiers, previous RECOIL penalty, and equipment bonus (if any). 
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter any negative modifiers here.  Enter it as a postive number, Roll20 does not like the use of negative numbers directly.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Roll to Fire BattleMech Weapon Button.  Target Number (roll to get or higher):
+                            </td>
+                        </tr><!-- END of BattleTech WPN Fire Personal Combat Roll-->
+
+
+                    </table>
+                </div>
+
+
+
+
+		</div>
+	</div>
+    </div><!-- END of of Small Arms ToHit Check Roll-->
+
+
+
+
+
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Blue Hex-->
+
+
+
+<!-- START of Sensor Operations Roll BLUE-->
+<div class="BLUEwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Blue Hex--><!-- START of Sensor Operations-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+
+
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Sensor Operations Check (all numbers must be positive when entered)</span><br>
+                    <table class="section-table">
+
+
+ <tr><!-- START of Sensor Operations Roll-->
+                            <th>Sensor Operations Skill Level</th>
+                            <th>Positive Bonus</th>
+                            <th>Negative Bonus</th>
+                            <th>Sensor Operations Button</th>
+                        </tr>
+                       <tr>
+                            <td>
+			    Enter Sensor Operations Skill Level: <input type="number" name="attr_SensorOperationsLevel" value="0" style="width:50px;">
+                            </td>
+                            <td>
+			    Enter Positive Bonus: <input type="number" name="attr_SensorOPPositiveBonus" value="0" style="width:50px;">
+                            </td>
+                            <td>
+			    Enter Negative Bonus: <input type="number" name="attr_SensorOPNegativeBonus" value="0" style="width:50px;">
+                            </td>
+
+                            <td>
+Target Number (roll to get or higher):<input type="number" name="attr_SensorOPTNValue" value="8" disabled style="width:50px;">
+
+<button type="roll" value="/roll 2d6 + @{SensorOperationsLevel} + @{SensorOPPositiveBonus} - @{SensorOPNegativeBonus} - 8" name="roll_SensorOperations">Sensor Operations Button</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter your Sensor Operations Skill Level.  Sorry, get this from the previous Skills tab. 
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add all BONUS to the Sensor Operations Skill.  This will be added to your roll.  Higher is better.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add all Negative Modifiers to the Sensor Operations Skill here.  DO NOT USE NEGATIVE Numbers.  Only use postive numbers.  This will be subtracted to your roll.  Higher is worse.  Enter it as a postive number, Roll20 does not like the use of negative numbers directly.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Roll to determine Sensor Operations.  Target Number (roll to get or higher):
+                            </td>
+                        </tr><!-- END of BattleTech WPN Fire Personal Combat Roll-->
+
+
+                    </table>
+                </div>
+
+
+
+
+		</div>
+	</div>
+    </div><!-- END of of Sensor Operations Check Roll-->
+<!-- END of Sensor Operations Roll BLUE-->
+
+
+
+
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Blue Hex-->
+
+</div>
+
+
+
+
+
+
+<div class="MANGOwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+
+
+	<div class="movementgrid">
+
+<!--- ZINJBattleMech START -->
+            <div class="col1">
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Consciousness</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Consciousness Level</th>
+                            <th>Positive Modifiers</th>
+                            <th>Negative Modifiers</th>
+                            <th>Target Number</th>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+		<div class="mechdata physconsole flexrow">
+	<div class="movementgrid">
+			<h2>Consciousness:</h2>
+			<div class="radio-container zero">
+				<input type="radio" name="attr_TNConsciousness" value="1" checked><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="3"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="5"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="7"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="10"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="11"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="666"><span></span>
+			</div>
+	</div>
+		</div>
+			Consciousness Level:  
+                            </td>
+
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_POSConsciousnessMOD">
+                            </td>
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_NEGConsciousnessMOD">
+                            </td>
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_TNConsciousness">
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Consciousness Level.  Level 0 = No Fatigue Damage.  Level 6 = death.
+                <div class="medical-image" style="width:200px;margin-top:10px;padding-top:200px;">
+		</div>
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add any positive Modifiers here, such as TOUGHNESS [trait].
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add any Negative Modifiers here, such as GLASS JAW [trait].  Enter as a positive number, Roll20 does not like the use of negatives.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter Target Number, based on the level.  
+				Level 0: TN=1
+				Level 1: TN=3
+				Level 2: TN=5
+				Level 3: TN=7
+				Level 4: TN=10
+				Level 5: TN=11
+				Level 6: DEATH
+                            </td>
+                        </tr>
+                    </table>
+
+<button type="roll" value="/roll 2d6 + @{POSConsciousnessMOD} - @{NEGConsciousnessMOD} - @{TNConsciousness}" name="roll_ConsciousnessCheck">Roll for Consciousness Check</button>
+
+
+                </div>
+	</div>
+<!--- ZINJBattleMech END -->
+
+	</div>
+
+
+<!-- Former GATOR-->
+
+
+
+                <div class="input-field"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:#855C33">
+                    <span style="font-size:large">Armor Area</span><br>
+                    <fieldset class="repeating_armor">
+                        <table class="section-table2">
+                            <tr>
+                                <th>Personal Armor</th>
+                                <th>Location</th>
+                                <th>Armor Type</th>
+                                <th>BAR (M/B/E/X)</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:120px;" type="text" name="attr_Armor1">
+                                </td>
+                                <td>
+                                    <input style="width:120px;" type="text" name="attr_ArmorLoc1">
+                                </td>
+                                <td>
+                                    <input style="width:115px;" type="text" name="attr_ArmorType1">
+                                </td>
+                                <td>
+                                    <input style="width:50px;" type="number" name="attr_ArmorBAR1">
+                                    /<input style="width:50px;" type="number" name="attr_ArmorBAR2">
+                                    /<input style="width:50px;" type="number" name="attr_ArmorBAR3">
+                                    /<input style="width:50px;" type="number" name="attr_ArmorBAR4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info2" style="background-color: #DBDBDB;">
+                                    Example: Jacket
+                                </td>
+                                <td class="info2" style="background-color: #DBDBDB;">
+                                    Example: Torso, Arms
+                                </td>
+                                <td class="info2" style="background-color: #DBDBDB;">
+                                    Example: Flak
+                                </td>
+                                <td class="info2" style="background-color: #DBDBDB;">
+                                    Example: 1/5/1/3
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="section-table2">
+                            <tr>
+                                <th>Notes</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:480px;" type="text" name="attr_ArmorWeaponNotes">
+                                </td>
+
+
+                    </fieldset>
+                </div>
+
+                <div class="input-field"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:#CF2929">
+                    <span style="font-size:large">Weapon Area</span><br>
+                    <fieldset class="repeating_weapon">
+                        <table class="section-table2">
+                            <tr>
+                                <th>Weapon</th>
+                                <th>Ammo</th>
+                                <th>AP/BD</th>
+                                <th>Range</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:200px;" type="text" name="attr_Weapon">
+                                </td>
+                                <td>
+                                    <input style="width:50px;" type="number" name="attr_WeaponAmmo">
+                                </td>
+                                <td>
+                                    <input style="width:50px;" type="text" name="attr_WeaponAP">
+                                    /<input style="width:50px;" type="text" name="attr_WeaponBD">
+                                </td>
+                                <td>
+                                    <input style="width:50px;" type="number" name="attr_WeaponR1">
+                                    /<input style="width:50px;" type="number" name="attr_WeaponR2">
+                                    /<input style="width:50px;" type="number" name="attr_WeaponR3">
+                                    /<input style="width:50px;" type="number" name="attr_WeaponR4">
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="section-table2">
+                            <tr>
+                                <th>Skill</th>
+                                <th>TN</th>
+                                <th>Notes</th>
+                                <th>Check</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:50px;" type="number" name="attr_WeaponSk">
+                                </td>
+                                <td>
+                                    <input style="width:50px;" type="number" name="attr_WeaponTN">
+                                </td>
+                                <td>
+                                    <input style="width:480px;" type="text" name="attr_ArmorWeaponNotes">
+                                </td>
+                                <td>
+                                    <button type='roll' name="roll_weaponcheck" style="text-align:left" value='
+                                    Attacks with @{Weapon}
+                                    Margin of Success: [[2d6 + @{WeaponSk} - @{WeaponTN}]]
+                                    Weapon Damage: @{WeaponAP}/@{WeaponBD} '/>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                    </fieldset>
+                </div>
+
+                <div class="input-field"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:#9D27CC">
+                    <span style="font-size:large">Skill Area</span><br>
+
+    <input type="radio" value="-1" name="attr_learningspeed2" class="skills-labels">Fast Learner</input>
+    <input type="radio" value="1" name="attr_learningspeed2" class="skills-labels">Slow Learner</input>
+    <input type="radio" value="0" name="attr_learningspeed2" checked="true" class="skills-labels">Standard</input>
+
+                    <fieldset class="repeating_weapon">
+                        <table class="section-table2">
+                            <tr>
+                                <th>Name of Skill</th>
+                                <th>Related Attribute(s)</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:450px;" type="text" name="attr_skillareaskill">
+                                </td>
+
+
+                                <td>
+                                    <input style="width:50px;" type="text" name="attr_SkillR1">
+                                    /<input style="width:50px;" type="text" name="attr_SkillR2">
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <table class="section-table2">
+                            <tr>
+                                <th>Combined Attribute(s) Bonus</th>
+                                <th>Additional Modifiers(s)</th>
+                                <th>Target Number</th>
+                                <th>Notes</th>
+                                <th>Check</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:50px;" type="number" name="attr_AttributeAreaSk">
+                                </td>
+                                <td>
+                                    <input style="width:50px;" type="number" name="attr_MODAreaSk">
+                                </td>
+                                <td>
+                                    <input style="width:50px;" type="number" name="attr_SkillAreaTN">
+                                </td>
+                                <td>
+                                    <input style="width:250px;" type="text" name="attr_SkillAreaNotes">
+                                </td>
+                                <td>
+                                    <button type='roll' name="roll_weaponcheck" style="text-align:left" value='
+                                    Attacks with @{Weapon}
+                                    Margin of Success: [[2d6 + @{AttributeAreaSk} + @{MODAreaSk} - @{SkillAreaTN}]] '/>
+                                </td>
+                            </tr>
+                        </table>
+
+                            </tr>
+                        </table>
+                        <br>
+                    </fieldset>
+                </div>
+
+
+            </div>
+
+
+
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Blue Hex-->
+
+        </div>
+    </div>
+</div><!-- END of Personal Combat Data tab-->
+
+
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Blue Hex-->
+
+</div>
+
+
+<!-- Miscellaneous Data START-->
+<div class="tab-content tab6">
+    <h1>Miscellaneous Data</h1>
+
+    <div class="wrapper">
+
+		<div class="flexrow">
+			<div class="movementgrid">
+				<h3>Character Name:</h3><input type="text" name="attr_character_name" style="width:500px;" /> </h3>
+			</div>
+		</div>
+
+
+                <div class="input-field"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:#3D1313">
+                    <span style="font-size:large">Miscellaneous Data</span><br>
+                    <fieldset class="repeating_Data">
+
+                        <table class="section-table2">
+                            <tr>
+
+                                <th>Notes</th>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <input style="width:480px;" type="text" name="attr_MiscNotes">
+                                </td>
+
+                            </tr>
+                        </table>
+
+                        <br>
+                    </fieldset>
+                </div>
+
+
+
+            </div>
+
+</div>
+<!-- Miscellaneous Data END-->
+
+
+
+
+
+
+
+
+
+<!-- BattleMech Data START-->
+<!-- BattleMech standalone code -->
+<div class="tab-content tab7">
+    <h1>BattleMech Data - Low Number Rolls are better on (BattleMech) Gunnery and Piloting Skills.</h1>
+
+
+
+
+<div class="BMwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Brown Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+
+			<div class="flexrow">
+			  <div class="movementgrid">
+				<h3>MechWarrior Name:</h3><input type="text" name="attr_character_name" style="width:250px;" /> </h3>
+				<h3> </h3>
+				<h2> BattleMech Name:</h3><input type="text" name="attr_mechtype" style="width:250px;" /> </h2>
+			  </div>
+			</div>
+
+
+
+	<div class="movementgrid">
+			<div class="flexrow">
+				
+<div class="BLUEwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Blue Hex--><!-- START of initiative Personal Combat Roll Blue-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Standard Initiative Personal Combat Roll</span><br>
+                    <table class="section-table">
+
+
+                        <tr><!-- START of initiative Personal Combat Roll-->
+                            <th>Additional Initiative Modifiers</th>
+                            <th>Current Tactics Skill Level</th>
+                            <th>Current Leadership Skill Level</th>
+                            <th>Initiative Roll Button</th>
+                        </tr>
+                       <tr>
+                            <td>
+                                <h3>Add Positive Mod:<input style="width:50px;" type="number" name="attr_addmodinitiative" value="0"></h3>
+                                <h3>Add Negative Mod:<input style="width:50px;" type="number" name="attr_addneginitiative" value="0"></h3>
+                            </td>
+                            <td>
+				Current Tactics Skill level:  <input style="width:50px;" type="number" name="attr_CurrentTacticsSkill" value="0">
+                            </td>
+                            <td>
+				Current Leadership Skill level:  <input style="width:50px;" type="number" name="attr_LeadershipTacticsSkill" value="0">
+                            </td>
+                            <td>
+<button type="roll" value="/roll 2d6 + @{addmodinitiative} + @{CurrentTacticsSkill} + @{LeadershipTacticsSkill} - @{addneginitiative}" name="roll_initiative">Initiative</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add Positive Mod:  Enter Any Additional Positive Initiative Modifiers.  Add Negative Mod: Enter Any Additional Negative Initiative Modifiers. Enter the negative modifiers as a positive number.  Roll20 does not like the use of pure negative numbers in this format.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Sorry, get the skill level from the previous skill tab.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Sorry, get the skill level from the previous skill tab.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Roll for Initiative.  Higher is better.
+                            </td>
+                        </tr><!-- END of initiative Personal Combat Roll-->
+
+
+
+                    </table>
+                </div>
+            </div>
+          </div>
+        </div><!-- END of initiative Personal Combat Roll Blue-->
+				
+			</div>
+	</div>
+	<div class="movementgrid">
+			<div class="flexrow">
+
+			<h3><button type="roll" value="/roll 2d6 + @{SensorOperationsLevel} + @{SensorOPPositiveBonus} - @{SensorOPNegativeBonus} - 8" name="roll_SensorOperations">Sensor Operations Button</button>
+
+
+			</div>
+	</div>
+
+
+	<div class="movementgrid">
+			   <h2> Pilot Skill: <input type="number" name="attr_BTBattleMechPilot" value="8-@{AToWBattleMechPilot}" disabled style="width:75px;"> </h2>
+	</div>
+
+	<div class="movementgrid">
+			<h2>Gunnery Skill: <input type="number" name="attr_BTBattleMechGunnery" value="8-@{AToWBattleMechGunnery}" disabled style="width:50px;"> </h2>
+	</div>
+
+	<div class="movementgrid">
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">PAN:  BT Pilot Skill Roll Check</span><br>
+                    <table class="section-table">
+
+
+                        <tr><!-- START of BT Pilot Roll-->
+                            <th>P: BT Pilot Skill</th>
+                            <th>A: All Other Positive Modifiers</th>
+                            <th>N: All Negative Modifiers</th>
+                            <th>Target Number and Roll for BT Pilot Skill Check</th>
+                        </tr>
+                       <tr>
+                            <td>
+                                <h3>P: <input style="width:50px;" type="number" name="attr_PilotPValue" value="@{BTBattleMechPilot}"></h3>
+                            </td>
+                            <td>
+				A: <input style="width:50px;" type="number" name="attr_PilotAValue" value="0">
+                            </td>
+                            <td>
+				N: <input style="width:50px;" type="number" name="attr_PilotNValue" value="0">
+                            </td>
+Target Number: <input style="width:50px;" type="number" name="attr_PilotTNValue" value="@{PilotPValue} + @{PilotAValue} - @{PilotNValue}" disabled>
+<button type="roll" value="/roll 2d6 - @{PilotPValue} - @{PilotAValue} + @{PilotNValue}" name="roll_BTPilotSkillCheck">BT Pilot Skill Check</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter your Classic Battletech Pilot Skill here.  Please note, if your pilot skill is a negative (i.e. -2) enter the negative number as a zero here and add the negative number in the negative number field.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter all Positive modifiers for the Pilot Skill check here (minus the Pilot Skill itself).  [i.e. Mech Moves 5-7 Hexes and has a +1 to skidding in pavement or similar hex]
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter all Negative modifiers here.  When you enter them, enter them as a positive.  [i.e.  If your BT pilot skill is -2 and there are no other negative modifiers then enter a 2 here (and a 0 in the BT Pilot Skill area).
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                The Target Number and Roll for BT Pilot Skill Check
+                            </td>
+                        </tr><!-- END of initiative Pilot Skill Roll-->
+
+                    </table>
+                </div>
+	</div>
+
+
+
+	<div class="movementgrid">
+
+<!--- ZINJBattleMech START -->
+            <div class="col1">
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Consciousness</span><br>
+                    <table class="section-table">
+                        <tr>
+                            <th>Consciousness Level</th>
+                            <th>Positive Modifiers</th>
+                            <th>Negative Modifiers</th>
+                            <th>Target Number</th>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+		<div class="mechdata physconsole flexrow">
+	<div class="movementgrid">
+			<h2>Consciousness:</h2>
+			<div class="radio-container zero">
+				<input type="radio" name="attr_TNConsciousness" value="1" checked><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="3"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="5"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="7"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="10"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="11"><span></span>
+				<input type="radio" name="attr_TNConsciousness" value="666"><span></span>
+			</div>
+	</div>
+		</div>
+			Consciousness Level:  
+                            </td>
+
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_POSConsciousnessMOD">
+                            </td>
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_NEGConsciousnessMOD">
+                            </td>
+                            <td>
+				<input style="width:50px;" type="number" value ="0" name="attr_TNConsciousness">
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Consciousness Level.  Level 0 = No Fatigue Damage.  Level 6 = death.
+                <div class="medical-image" style="width:200px;margin-top:10px;padding-top:200px;">
+		</div>
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add any positive Modifiers here, such as TOUGHNESS [trait].
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add any Negative Modifiers here, such as GLASS JAW [trait].  Enter as a positive number, Roll20 does not like the use of negatives.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter Target Number, based on the level.  
+				Level 0: TN=1
+				Level 1: TN=3
+				Level 2: TN=5
+				Level 3: TN=7
+				Level 4: TN=10
+				Level 5: TN=11
+				Level 6: DEATH
+                            </td>
+                        </tr>
+                    </table>
+
+<button type="roll" value="/roll 2d6 + @{POSConsciousnessMOD} - @{NEGConsciousnessMOD} - @{TNConsciousness}" name="roll_ConsciousnessCheck">Roll for Consciousness Check</button>
+
+
+                </div>
+	</div>
+<!--- ZINJBattleMech END -->
+
+	</div>
+
+
+
+	<div class="movementgrid"><!--- START GATORN WPN Display Sheet -->
+			<div class="flexrow">
+					<div class="gatorNdisplay"><!--- GATOR Display Sheet -->
+
+
+<!--- GATORN WPN Display Sheet -->
+
+
+						<div class="gatorN-g"><span>G</span>
+					<input style="width:50px;" type="number" name="attr_FireGValue" value="@{BTBattleMechGunnery}">
+						</div>
+						<div class="gatorN-a"><span>A</span>
+					<input style="width:50px;" type="number" name="attr_FireAValue" value="0">
+						</div>
+						<div class="gatorN-t"><span>T</span>
+					<input style="width:50px;" type="number" name="attr_FireTValue" value="0">
+						</div>
+						<div class="gatorN-o"><span>O</span>
+					<input style="width:50px;" type="number" name="attr_FireOValue" value="0">
+						</div>
+						<div class="gatorN-r"><span>R</span>
+					<input style="width:50px;" type="number" name="attr_FireRValue" value="0">
+						</div>
+						<div class="gatorN-n"><span>N</span>
+					<input style="width:50px;" type="number" name="attr_FireNValue" value="0">
+						</div>
+						<div class="launch"><span>Target Number:
+</span><input style="width:50px;" type="number" name="attr_FireTNValue" value="@{FireGValue} + @{FireAValue} + @{FireTValue} + @{FireOValue} + @{FireRValue} - @{FireNValue}" disabled>
+						</div>
+
+						<div class="description"><span></span></div>
+					</div>
+
+			</div>
+	</div><!--- GATOR Display Sheet -->
+
+		</div><!--- END GATOR WPN Display Sheet -->
+
+
+
+
+
+
+		<div class="mechdata physconsole flexrow">
+
+
+
+<div class="BLUEwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Blue Hex--><!-- START of Sensor Operations-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+
+
+
+                <div class="input-field" style="width:600px;margin-top:8px;padding-top:10px;">
+                    <span style="font-size:large">Sensor Operations Check (all numbers must be positive when entered)</span><br>
+                    <table class="section-table">
+
+
+ <tr><!-- START of Sensor Operations Roll-->
+                            <th>Sensor Operations Skill Level</th>
+                            <th>Positive Bonus</th>
+                            <th>Negative Bonus</th>
+                            <th>Sensor Operations Button</th>
+                        </tr>
+                       <tr>
+                            <td>
+			    Enter Sensor Operations Skill Level: <input type="number" name="attr_SensorOperationsLevel" value="0" style="width:50px;">
+                            </td>
+                            <td>
+			    Enter Positive Bonus: <input type="number" name="attr_SensorOPPositiveBonus" value="0" style="width:50px;">
+                            </td>
+                            <td>
+			    Enter Negative Bonus: <input type="number" name="attr_SensorOPNegativeBonus" value="0" style="width:50px;">
+                            </td>
+
+                            <td>
+Target Number (roll to get or higher):<input type="number" name="attr_SensorOPTNValue" value="8" disabled style="width:50px;">
+
+<button type="roll" value="/roll 2d6 + @{SensorOperationsLevel} + @{SensorOPPositiveBonus} - @{SensorOPNegativeBonus} - 8" name="roll_SensorOperations">Sensor Operations Button</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Enter your Sensor Operations Skill Level.  Sorry, get this from the previous Skills tab. 
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add all BONUS to the Sensor Operations Skill.  This will be added to your roll.  Higher is better.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Add all Negative Modifiers to the Sensor Operations Skill here.  DO NOT USE NEGATIVE Numbers.  Only use postive numbers.  This will be subtracted to your roll.  Higher is worse.  Enter it as a postive number, Roll20 does not like the use of negative numbers directly.
+                            </td>
+                            <td class="info" style="background-color: #DBDBDB;">
+                                Roll to determine Sensor Operations.  Target Number (roll to get or higher):
+                            </td>
+                        </tr><!-- END of BattleTech WPN Fire Personal Combat Roll-->
+
+
+                    </table>
+                </div>
+
+
+
+
+		</div>
+	</div>
+    </div><!-- END of of Sensor Operations Check Roll-->
+
+
+
+<div class="GREENwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Green Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+				<h3>Base Movement:</h3>
+			<div class="movementgrid">
+				<h3>Walk:</h3><input type="number" name="attr_movement-walking" />
+				<h3>Run: </h3><input type="number" name="attr_movement-running" />
+				<h3>Jump:</h3><input type="number" name="attr_movement-jumping" />
+			</div>
+
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Green Hex-->
+
+<div class="GREENwrapper"><!-- BattleMech wrapperSTART--><!-- START Pretty Green Hex-->
+	<div class="flexrow">
+		<div class="pilotdata physconsole">
+
+				<h3>Movement this turn:</h3>
+			<div class="movementgrid">
+				<h3>Walk:</h3><input type="number" name="attr_turnmovement-walking" />
+				<h3>Run: </h3><input type="number" name="attr_turnmovement-running" />
+				<h3>Jump:</h3><input type="number" name="attr_turnmovement-jumping" />
+			</div>
+
+		</div>
+	</div>
+</div><!-- BattleMech wrapperEND--><!-- END Pretty Green Hex-->
+			<div class="movementgrid">
+    <input type="radio" value="0" name="attr_battlemech_class" checked="true" class="skills-labels"> Light </input>
+    <input type="radio" value="1" name="attr_battlemech_class" class="skills-labels"> Medium </input>
+    <input type="radio" value="2" name="attr_battlemech_class" class="skills-labels"> Heavy </input>
+    <input type="radio" value="3" name="attr_battlemech_class" class="skills-labels"> Assault </input>
+			</div>
+
+<!--- Temperature Controls -->
+			<div class="movementgrid">
+					<div class="temperaturedisplay">
+						<div>
+							<h2>Current Heat Level</h2>
+							<input type="number" name="attr_temperature-current">
+						</div>
+						<div>
+							<h2>Current Heat Sinks</h2>
+							<input type="number" name="attr_temperature-heatsink">
+						</div>
+						<div class="heatpenalties">
+							<div><input readonly name="attr_heatpen-shutdown-auto" value="30"><input type="hidden"  value="@{temperature-rank}" name="attr_temperature-rank"><div>Shutdown</div></div>
+							<div><input readonly name="attr_heatpen-ammo-8" value="28"><input type="hidden" value="0" name="attr_temperature-rank"><div>Ammo exp. avoid on 8+</div></div>
+							<div><input readonly name="attr_heatpen-shutdown-10" value="26"><input type="hidden" value="0" name="attr_temperature-rank"><div>Shutdown, avoid on 10+</div></div>
+							<div><input readonly name="attr_heatpen-movement-5" value="25"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-5 Movement Points</div></div>
+							<div><input readonly name="attr_heatpen-firemod-4" value="24"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-4 Modifier to Fire</div></div>
+							<div><input readonly name="attr_heatpen-ammo-6" value="23"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Ammo exp. avoid on 6+</div></div>
+							<div><input readonly name="attr_heatpen-shutdown-8" value="22"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Shutdown, avoid on 8+</div></div>
+							<div><input readonly name="attr_heatpen-movement-4" value="20"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-4 Movement Points</div></div>
+							<div><input readonly name="attr_heatpen-ammo-4" value="19"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Ammo exp. avoid on 4+</div></div>
+							<div><input readonly name="attr_heatpen-shutdown-6" value="18"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Shutdown, avoid on 6+</div></div>
+							<div><input readonly name="attr_heatpen-firemod-3" value="17"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-3 Modifier to Fire</div></div>
+							<div><input readonly name="attr_heatpen-movement-3" value="15"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-3 Movement Points</div></div>
+							<div><input readonly name="attr_heatpen-shutdown-4" value="14"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Shutdown, avoid on 4+</div></div>
+							<div><input readonly name="attr_heatpen-firemod-2" value="13"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-2 Modifier to Fire</div></div>
+							<div><input readonly name="attr_heatpen-movement-2" value="10"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-2 Movement Points</div></div>
+							<div><input readonly name="attr_heatpen-firemod-1" value="8"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-1 Modifier to Fire</div></div>
+							<div><input readonly name="attr_heatpen-movement-1" value="5"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-1 Movement Points</div></div>
+						</div>
+					</div>
+
+
+		</div>
+
+	</div>
+
+	</div>
+		<div class="mechdisplay screendisplay">
+			<div class="mechmenu">
+				<nav class="navbar">
+					<button type="action" class="btn-tab" name="act_defense">BattleMech Armor Stats</button>
+					<button type="action" class="btn-tab" name="act_offense">BattleMech Weapon Stats</button>
+				</nav>
+				<!--- Roll Menu -->
+				<div class="rollmenu">
+<button type="roll" value="/roll 2d6 - @{FireGValue} - @{FireAValue} - @{FireTValue} - @{FireOValue} - @{FireRValue} + @{FireNValue}" name="roll_wpnattack">Weapon Attack</button>
+<button type="roll" value="/roll 2d6 + @{addmodinitiative} + @{CurrentTacticsSkill} + @{LeadershipTacticsSkill} - @{addneginitiative}" name="roll_initiative">Initiative</button>
+<button type="roll" value="/roll 2d6 + @{SensorOperationsLevel} + @{SensorOPPositiveBonus} - @{SensorOPNegativeBonus} - 8" name="roll_SensorOperations">Sensor Operations Button</button>
+
+
+
+
+<button type="roll" value="/roll 2d6 - @{PilotPValue} - @{PilotAValue} + @{PilotNValue}" name="roll_BTPilotSkillCheck">BT Pilot Skill Check</button>
+
+				</div>
+			</div>
+			<input type='hidden' class="sheet-tabstoggle" name="attr_mechdisplay" value='defense' />
+			<div class="mechcontent">
+				
+				<!--- Offense Display Sheet -->
+				<div class="offensedisplay">
+					<div class="gatorNdisplay">
+						<div class="gatorN-g"><span>G</span>
+					<input style="width:50px;" type="number" name="attr_FireGValue" value="@{BTBattleMechGunnery}">
+						</div>
+						<div class="gatorN-a"><span>A</span>
+					<input style="width:50px;" type="number" name="attr_FireAValue" value="0">
+						</div>
+						<div class="gatorN-t"><span>T</span>
+					<input style="width:50px;" type="number" name="attr_FireTValue" value="0">
+						</div>
+						<div class="gatorN-o"><span>O</span>
+					<input style="width:50px;" type="number" name="attr_FireOValue" value="0">
+						</div>
+						<div class="gatorN-r"><span>R</span>
+					<input style="width:50px;" type="number" name="attr_FireRValue" value="0">
+						</div>
+						<div class="gatorN-n"><span>N</span>
+					<input style="width:50px;" type="number" name="attr_FireNValue" value="0">
+						</div>
+						<div class="launch"><span>Target Number:</span>
+<input style="width:50px;" type="number" name="attr_FireTNValue" value="@{FireGValue} + @{FireAValue} + @{FireTValue} + @{FireOValue} + @{FireRValue} - @{FireNValue}" disabled>
+</div>
+						<div class="description"><span></span></div>
+					</div>
+
+<!--- Repeating Weapons -->
+					<div class="weapondisplay">
+						<h2>Weapons</h2>
+						<div class="weapongrid"><h3>Gunnery</h3><h3>Type</h3><h3>Location</h3><h3>Heat</h3><h3>Dmg V</h3><h3>Min</h3><h3>SR</h3><h3>MR</h3><h3>LR</h3><h3>Shots</h3><h3>Launch</h3></div>
+
+						<fieldset class="repeating_weapons weapongrid">
+							
+						  <div class="weapongrid">
+								<select name="attr_BTBattleMechGunnery">
+									<option value="0"checked>Choose Gunnery</option>
+									<option value="@{ballistic}">Ballistic</option>
+									<option value="@{laser}">Laser</option>
+									<option value="@{missile}">Missile</option>
+								</select>
+								<input type="text" name="attr_weapon-name" placeholder="Weapon Name">
+								<input type="text" name="attr_weapon-loc" placeholder="Weapon Location">
+								<input type="number" name="attr_weapon-heat" value="1">
+								<input type="number" name="attr_weapon-damagev" value="0">
+								<input type="number" name="attr_weapon-min-range" value="0">
+								<input type="text" name="attr_weapon-short-range" value="0-0">
+								<input type="text" name="attr_weapon-medium-range" value="0-0">
+								<input type="text" name="attr_weapon-long-range" value="0-0">
+								<input type="number" name="attr_weapon-shotston" value="0">
+							<div>
+<button type="roll" value="/roll 2d6 - @{FireGValue} - @{FireAValue} - @{FireTValue} - @{FireOValue} - @{FireRValue} + @{FireNValue}" name="roll_wpnattack">Fire</button>
+							</div>
+						  </div>
+						</fieldset>
+					</div>
+<!--- Temperature Controls -->
+					<div class="temperaturedisplay">
+						<div>
+							<h2>Heat Scale</h2>
+							<input type="number" name="attr_temperature-current">
+						</div>
+						<div>
+							<h2>Heat Sinks</h2>
+							<input type="number" name="attr_temperature-heatsink">
+						</div>
+						<div class="heatpenalties">
+							<div><input readonly name="attr_heatpen-shutdown-auto" value="30"><input type="hidden"  value="@{temperature-rank}" name="attr_temperature-rank"><div>Shutdown</div></div>
+							<div><input readonly name="attr_heatpen-ammo-8" value="28"><input type="hidden" value="0" name="attr_temperature-rank"><div>Ammo exp. avoid on 8+</div></div>
+							<div><input readonly name="attr_heatpen-shutdown-10" value="26"><input type="hidden" value="0" name="attr_temperature-rank"><div>Shutdown, avoid on 10+</div></div>
+							<div><input readonly name="attr_heatpen-movement-5" value="25"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-5 Movement Points</div></div>
+							<div><input readonly name="attr_heatpen-firemod-4" value="24"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-4 Modifier to Fire</div></div>
+							<div><input readonly name="attr_heatpen-ammo-6" value="23"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Ammo exp. avoid on 6+</div></div>
+							<div><input readonly name="attr_heatpen-shutdown-8" value="22"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Shutdown, avoid on 8+</div></div>
+							<div><input readonly name="attr_heatpen-movement-4" value="20"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-4 Movement Points</div></div>
+							<div><input readonly name="attr_heatpen-ammo-4" value="19"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Ammo exp. avoid on 4+</div></div>
+							<div><input readonly name="attr_heatpen-shutdown-6" value="18"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Shutdown, avoid on 6+</div></div>
+							<div><input readonly name="attr_heatpen-firemod-3" value="17"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-3 Modifier to Fire</div></div>
+							<div><input readonly name="attr_heatpen-movement-3" value="15"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-3 Movement Points</div></div>
+							<div><input readonly name="attr_heatpen-shutdown-4" value="14"><input type="hidden" value="0"  name="attr_temperature-rank"><div>Shutdown, avoid on 4+</div></div>
+							<div><input readonly name="attr_heatpen-firemod-2" value="13"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-2 Modifier to Fire</div></div>
+							<div><input readonly name="attr_heatpen-movement-2" value="10"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-2 Movement Points</div></div>
+							<div><input readonly name="attr_heatpen-firemod-1" value="8"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-1 Modifier to Fire</div></div>
+							<div><input readonly name="attr_heatpen-movement-1" value="5"><input type="hidden" value="0"  name="attr_temperature-rank"><div>-1 Movement Points</div></div>
+						</div>
+					</div>
+
+<!--- Ammo -->
+					<div class="ammodisplay">
+						<h2>Ammo</h2>
+						<fieldset class="repeating_ammo">
+							<div class="ammogrid">
+								<div class="fullrow"><input placeholder="Ammo Type" type="text" name="attr_ammo-name"></div>
+								<h3>Current</h3><input type="number" name="attr_ammo-current">
+								<h3>Max</h3><input type="number" name="attr_ammo-max">
+								<div class="fullrow"><input placeholder="Notes" type="text" name="attr_ammo-notes"></div>
+							</div>
+							
+						</fieldset>
+					</div>
+				</div>
+				<!--- Defense Display Sheet -->
+				<div class="defensedisplay">
+					<div class="head">
+						<h2>Head</h2>
+						<div class="crittable-1">
+							<label><input type="checkbox" name="attr_slot-1-damaged-head"><span></span></label>1. <input type="text" name="attr_slot-1-head" value="Life Support">
+							<label><input type="checkbox" name="attr_slot-2-damaged-head"><span></span></label>2. <input type="text" name="attr_slot-2-head" value="Sensors">
+							<label><input type="checkbox" name="attr_slot-3-damaged-head"><span></span></label>3. <input type="text" name="attr_slot-3-head" value="Cockpit">
+							<label><input type="checkbox" name="attr_slot-4-damaged-head"><span></span></label>4. <input type="text" name="attr_slot-4-head" value="Sensors">
+							<label><input type="checkbox" name="attr_slot-5-damaged-head"><span></span></label>5. <input type="text" name="attr_slot-5-head" value="Life Support">
+							<label><input type="checkbox" name="attr_slot-6-damaged-head"><span></span></label>6. <input type="text" name="attr_slot-6-head">
+						</div>
+						<div class="systems">
+							<div class="flexrow">
+								Engine
+								<div class="radio-container">
+									<input type="radio" name="attr_critical-engines" value="0" checked><span></span>
+									<input type="radio" name="attr_critical-engines" value="1"><span></span>
+									<input type="radio" name="attr_critical-engines" value="2"><span></span>
+									<input type="radio" name="attr_critical-engines" value="3"><span></span>
+								</div>
+							</div>
+							<div class="flexrow">
+								Gyro
+								<div class="radio-container">
+									<input type="radio" name="attr_critical-gyro" value="0" checked><span></span>
+									<input type="radio" name="attr_critical-gyro" value="1"><span></span>
+									<input type="radio" name="attr_critical-gyro" value="2"><span></span>
+								</div>
+							</div>
+							<div class="flexrow">
+								Sensor
+								<div class="radio-container">
+									<input type="radio" name="attr_critical-sensor" value="0" checked><span></span>
+									<input type="radio" name="attr_critical-sensor" value="1"><span></span>
+									<input type="radio" name="attr_critical-sensor" value="2"><span></span>
+								</div>
+							</div>
+						</div>
+						<input type="hidden" class="internal_css" value="0" name="attr_internal-css-head">
+						<div class="internaldamage">
+							Internal
+							<input type="number" name="attr_internal-current-head" value="0">
+							Max
+							<input type="number" name="attr_internal-max-head" value="0">
+						</div>
+						
+					</div>
+					<div class="torso-right">
+						<h2>Right Torso</h2>
+						<div class="crittable-1">
+							<label><input type="checkbox" name="attr_slot-1-damaged-torso_r"><span></span></label>1. <input type="text" name="attr_slot-1-torso_r">
+							<label><input type="checkbox" name="attr_slot-2-damaged-torso_r"><span></span></label>2. <input type="text" name="attr_slot-2-torso_r">
+							<label><input type="checkbox" name="attr_slot-3-damaged-torso_r"><span></span></label>3. <input type="text" name="attr_slot-3-torso_r">
+							<label><input type="checkbox" name="attr_slot-4-damaged-torso_r"><span></span></label>4. <input type="text" name="attr_slot-4-torso_r">
+							<label><input type="checkbox" name="attr_slot-5-damaged-torso_r"><span></span></label>5. <input type="text" name="attr_slot-5-torso_r">
+							<label><input type="checkbox" name="attr_slot-6-damaged-torso_r"><span></span></label>6. <input type="text" name="attr_slot-6-torso_r">
+						</div>
+						<div class="crittable-2">
+							<label><input type="checkbox" name="attr_slot-7-damaged-torso_r"><span></span></label>1. <input type="text" name="attr_slot-7-torso_r">
+							<label><input type="checkbox" name="attr_slot-8-damaged-torso_r"><span></span></label>2. <input type="text" name="attr_slot-8-torso_r">
+							<label><input type="checkbox" name="attr_slot-9-damaged-torso_r"><span></span></label>3. <input type="text" name="attr_slot-9-torso_r">
+							<label><input type="checkbox" name="attr_slot-10-damaged-torso_r"><span></span></label>4. <input type="text" name="attr_slot-10-torso_r">
+							<label><input type="checkbox" name="attr_slot-11-damaged-torso_r"><span></span></label>5. <input type="text" name="attr_slot-11-torso_r">
+							<label><input type="checkbox" name="attr_slot-12-damaged-torso_r"><span></span></label>6. <input type="text" name="attr_slot-12-torso_r">
+						</div>
+						<input type="hidden" class="internal_css" value="0" name="attr_internal-css-torso_r">
+						<div class="internaldamage">
+							Internal
+							<input type="number" name="attr_internal-current-torso_r" value="0">
+							Max
+							<input type="number" name="attr_internal-max-torso_r" value="0">
+						</div>
+						
+					</div>
+					<div class="torso-center">
+						<h2>Center Torso</h2>
+
+						<div class="crittable-1">
+							<label><input type="checkbox" name="attr_slot-1-damaged-torso_c"><span></span></label>1. <input type="text" name="attr_slot-1-torso_c" value="Engine">
+							<label><input type="checkbox" name="attr_slot-2-damaged-torso_c"><span></span></label>2. <input type="text" name="attr_slot-2-torso_c" value="Engine">
+							<label><input type="checkbox" name="attr_slot-3-damaged-torso_c"><span></span></label>3. <input type="text" name="attr_slot-3-torso_c" value="Engine">
+							<label><input type="checkbox" name="attr_slot-4-damaged-torso_c"><span></span></label>4. <input type="text" name="attr_slot-4-torso_c" value="Gyro">
+							<label><input type="checkbox" name="attr_slot-5-damaged-torso_c"><span></span></label>5. <input type="text" name="attr_slot-5-torso_c" value="Gyro">
+							<label><input type="checkbox" name="attr_slot-6-damaged-torso_c"><span></span></label>6. <input type="text" name="attr_slot-6-torso_c" value="Gyro">
+						</div>
+						<div class="crittable-2">
+							<label><input type="checkbox" name="attr_slot-7-damaged-torso_c"><span></span></label>1. <input type="text" name="attr_slot-7-torso_c" value="Gyro">
+							<label><input type="checkbox" name="attr_slot-8-damaged-torso_c"><span></span></label>2. <input type="text" name="attr_slot-8-torso_c" value="Engine">
+							<label><input type="checkbox" name="attr_slot-9-damaged-torso_c"><span></span></label>3. <input type="text" name="attr_slot-9-torso_c" value="Engine">
+							<label><input type="checkbox" name="attr_slot-10-damaged-torso_c"><span></span></label>4. <input type="text" name="attr_slot-10-torso_c">
+							<label><input type="checkbox" name="attr_slot-11-damaged-torso_c"><span></span></label>5. <input type="text" name="attr_slot-11-torso_c">
+							<label><input type="checkbox" name="attr_slot-12-damaged-torso_c"><span></span></label>6. <input type="text" name="attr_slot-12-torso_c">
+						</div>
+						<input type="hidden" class="internal_css" value="0" name="attr_internal-css-torso_c">
+						<div class="internaldamage">
+							Internal
+							<input type="number" name="attr_internal-current-torso_c" value="0">
+							Max
+							<input type="number" name="attr_internal-max-torso_c" value="0">
+						</div>
+					</div>
+					<div class="torso-left">
+						<h2>Left Torso</h2>
+
+						<div class="crittable-1">
+							<label><input type="checkbox" name="attr_slot-1-damaged-torso_l"><span></span></label>1. <input type="text" name="attr_slot-1-torso_l">
+							<label><input type="checkbox" name="attr_slot-2-damaged-torso_l"><span></span></label>2. <input type="text" name="attr_slot-2-torso_l">
+							<label><input type="checkbox" name="attr_slot-3-damaged-torso_l"><span></span></label>3. <input type="text" name="attr_slot-3-torso_l">
+							<label><input type="checkbox" name="attr_slot-4-damaged-torso_l"><span></span></label>4. <input type="text" name="attr_slot-4-torso_l">
+							<label><input type="checkbox" name="attr_slot-5-damaged-torso_l"><span></span></label>5. <input type="text" name="attr_slot-5-torso_l">
+							<label><input type="checkbox" name="attr_slot-6-damaged-torso_l"><span></span></label>6. <input type="text" name="attr_slot-6-torso_l">
+						</div>
+						<div class="crittable-2">
+							<label><input type="checkbox" name="attr_slot-7-damaged-torso_l"><span></span></label>1. <input type="text" name="attr_slot-7-torso_l">
+							<label><input type="checkbox" name="attr_slot-8-damaged-torso_l"><span></span></label>2. <input type="text" name="attr_slot-8-torso_l">
+							<label><input type="checkbox" name="attr_slot-9-damaged-torso_l"><span></span></label>3. <input type="text" name="attr_slot-9-torso_l">
+							<label><input type="checkbox" name="attr_slot-10-damaged-torso_l"><span></span></label>4. <input type="text" name="attr_slot-10-torso_l">
+							<label><input type="checkbox" name="attr_slot-11-damaged-torso_l"><span></span></label>5. <input type="text" name="attr_slot-11-torso_l">
+							<label><input type="checkbox" name="attr_slot-12-damaged-torso_l"><span></span></label>6. <input type="text" name="attr_slot-12-torso_l">
+						</div>
+						<input type="hidden" class="internal_css" value="0" name="attr_internal-css-torso_l">
+						<div class="internaldamage">
+							Internal
+							<input type="number" name="attr_internal-current-torso_l" value="0">
+							Max
+							<input type="number" name="attr_internal-max-torso_l" value="0">
+						</div>
+					</div>
+					<div class="arm-left">
+						<h2>Left Arm</h2>
+
+						<div class="crittable-1">
+							<label><input type="checkbox" name="attr_slot-1-damaged-arm_l"><span></span></label>1. <input type="text" name="attr_slot-1-arm_l" value="Shoulder">
+							<label><input type="checkbox" name="attr_slot-2-damaged-arm_l"><span></span></label>2. <input type="text" name="attr_slot-2-arm_l" value="Upper Arm Actuator">
+							<label><input type="checkbox" name="attr_slot-3-damaged-arm_l"><span></span></label>3. <input type="text" name="attr_slot-3-arm_l" value="Lower Arm Actuator">
+							<label><input type="checkbox" name="attr_slot-4-damaged-arm_l"><span></span></label>4. <input type="text" name="attr_slot-4-arm_l" value="Hand Actuator">
+							<label><input type="checkbox" name="attr_slot-5-damaged-arm_l"><span></span></label>5. <input type="text" name="attr_slot-5-arm_l">
+							<label><input type="checkbox" name="attr_slot-6-damaged-arm_l"><span></span></label>6. <input type="text" name="attr_slot-6-arm_l">
+						</div>
+						<div class="crittable-2">
+							<label><input type="checkbox" name="attr_slot-7-damaged-arm_l"><span></span></label>1. <input type="text" name="attr_slot-7-arm_l">
+							<label><input type="checkbox" name="attr_slot-8-damaged-arm_l"><span></span></label>2. <input type="text" name="attr_slot-8-arm_l">
+							<label><input type="checkbox" name="attr_slot-9-damaged-arm_l"><span></span></label>3. <input type="text" name="attr_slot-9-arm_l">
+							<label><input type="checkbox" name="attr_slot-10-damaged-arm_l"><span></span></label>4. <input type="text" name="attr_slot-10-arm_l">
+							<label><input type="checkbox" name="attr_slot-11-damaged-arm_l"><span></span></label>5. <input type="text" name="attr_slot-11-arm_l">
+							<label><input type="checkbox" name="attr_slot-12-damaged-arm_l"><span></span></label>6. <input type="text" name="attr_slot-12-arm_l">
+						</div>
+						<input type="hidden" class="internal_css" value="0" name="attr_internal-css-arm_l">
+						<div class="internaldamage">
+							Internal
+							<input type="number" name="attr_internal-current-arm_l" value="0">
+							Max
+							<input type="number" name="attr_internal-max-arm_l" value="0">
+						</div>
+					</div>
+					<div class="arm-right">
+						<h2>Right Arm</h2>
+						<div class="crittable-1">
+							<label><input type="checkbox" name="attr_slot-1-damaged-arm_r"><span></span></label>1. <input type="text" name="attr_slot-1-arm_r" value="Shoulder">
+							<label><input type="checkbox" name="attr_slot-2-damaged-arm_r"><span></span></label>2. <input type="text" name="attr_slot-2-arm_r" value="Upper Arm Actuator">
+							<label><input type="checkbox" name="attr_slot-3-damaged-arm_r"><span></span></label>3. <input type="text" name="attr_slot-3-arm_r" value="Lower Arm Actuator">
+							<label><input type="checkbox" name="attr_slot-4-damaged-arm_r"><span></span></label>4. <input type="text" name="attr_slot-4-arm_r" value="Hand Actuator">
+							<label><input type="checkbox" name="attr_slot-5-damaged-arm_r"><span></span></label>5. <input type="text" name="attr_slot-5-arm_r">
+							<label><input type="checkbox" name="attr_slot-6-damaged-arm_r"><span></span></label>6. <input type="text" name="attr_slot-6-arm_r">
+						</div>
+						<div class="crittable-2">
+							<label><input type="checkbox" name="attr_slot-7-damaged-arm_r"><span></span></label>1. <input type="text" name="attr_slot-7-arm_r">
+							<label><input type="checkbox" name="attr_slot-8-damaged-arm_r"><span></span></label>2. <input type="text" name="attr_slot-8-arm_r">
+							<label><input type="checkbox" name="attr_slot-9-damaged-arm_r"><span></span></label>3. <input type="text" name="attr_slot-9-arm_r">
+							<label><input type="checkbox" name="attr_slot-10-damaged-arm_r"><span></span></label>4. <input type="text" name="attr_slot-10-arm_r">
+							<label><input type="checkbox" name="attr_slot-11-damaged-arm_r"><span></span></label>5. <input type="text" name="attr_slot-11-arm_r">
+							<label><input type="checkbox" name="attr_slot-12-damaged-arm_r"><span></span></label>6. <input type="text" name="attr_slot-12-arm_r">
+						</div>
+						<input type="hidden" class="internal_css" value="0" name="attr_internal-css-arm_r">
+						<div class="internaldamage">
+							Internal
+							<input type="number" name="attr_internal-current-arm_r" value="0">
+							Max
+							<input type="number" name="attr_internal-max-arm_r" value="0">
+						</div>
+					</div>
+					<div class="leg-left">
+						<h2>Left Leg</h2>
+
+						<div class="crittable-1">
+							<label><input type="checkbox" name="attr_slot-1-damaged-leg_l"><span></span></label>1. <input type="text" name="attr_slot-1-leg_l" value="Hip">
+							<label><input type="checkbox" name="attr_slot-2-damaged-leg_l"><span></span></label>2. <input type="text" name="attr_slot-2-leg_l" value="Upper Leg Actuator">
+							<label><input type="checkbox" name="attr_slot-3-damaged-leg_l"><span></span></label>3. <input type="text" name="attr_slot-3-leg_l" value="Lower Leg Actuator">
+							<label><input type="checkbox" name="attr_slot-4-damaged-leg_l"><span></span></label>4. <input type="text" name="attr_slot-4-leg_l" value="Foot Actuator">
+							<label><input type="checkbox" name="attr_slot-5-damaged-leg_l"><span></span></label>5. <input type="text" name="attr_slot-5-leg_l">
+							<label><input type="checkbox" name="attr_slot-6-damaged-leg_l"><span></span></label>6. <input type="text" name="attr_slot-6-leg_l">
+						</div>
+						<input type="hidden" class="internal_css" value="0" name="attr_internal-css-leg_l">
+						<div class="internaldamage">
+							Internal
+							<input type="number" name="attr_internal-current-leg_l" value="0">
+							Max
+							<input type="number" name="attr_internal-max-leg_l" value="0">
+						</div>
+					</div>
+					<div class="leg-right">
+						<h2>Right Leg</h2>
+
+						<div class="crittable-1">
+							<label><input type="checkbox" name="attr_slot-1-damaged-leg_r"><span></span></label>1. <input type="text" name="attr_slot-1-leg_r" value="Hip">
+							<label><input type="checkbox" name="attr_slot-2-damaged-leg_r"><span></span></label>2. <input type="text" name="attr_slot-2-leg_r" value="Upper Leg Actuator">
+							<label><input type="checkbox" name="attr_slot-3-damaged-leg_r"><span></span></label>3. <input type="text" name="attr_slot-3-leg_r" value="Lower Leg Actuator">
+							<label><input type="checkbox" name="attr_slot-4-damaged-leg_r"><span></span></label>4. <input type="text" name="attr_slot-4-leg_r" value="Foot Actuator">
+							<label><input type="checkbox" name="attr_slot-5-damaged-leg_r"><span></span></label>5. <input type="text" name="attr_slot-5-leg_r">
+							<label><input type="checkbox" name="attr_slot-6-damaged-leg_r"><span></span></label>6. <input type="text" name="attr_slot-6-leg_r">
+						</div>
+						<input type="hidden" class="internal_css" value="0" name="attr_internal-css-leg_r">
+						<div class="internaldamage">
+							Internal
+							<input type="number" name="attr_internal-current-leg_r" value="0">
+							Max
+							<input type="number" name="attr_internal-max-leg_r" value="0">
+						</div>
+					</div>
+					<!--- Armor Display Sheet -->
+					<div class="armordisplay">
+						<input type="hidden" name="attr_armor_css-h" class="armor-damage" value="0" >
+						<div class="armorcard armor-h">
+							<div class="flexrow">H <input type="number" name="attr_armor-current-h" value="0"></div>
+							<div class="flexrow">MX <input type="number" name="attr_armor-max-h" value="0"></div>
+						</div>
+						<input type="hidden" name="attr_armor_css-ct" class="armor-damage" value="0" >
+						<div class="armorcard armor-ct">
+							<div class="flexrow">CT <input type="number" name="attr_armor-current-ct" value="0"></div>
+							<div class="flexrow">MX <input type="number" name="attr_armor-max-ct" value="0"></div>
+						</div>
+						<input type="hidden" name="attr_armor_css-rt" class="armor-damage" value="0" >
+						<div class="armorcard armor-rt">
+							<div class="flexrow">RT <input type="number" name="attr_armor-current-rt" value="0"></div>
+							<div class="flexrow">MX <input type="number" name="attr_armor-max-rt" value="0"></div>
+						</div>
+						<input type="hidden" name="attr_armor_css-lt" class="armor-damage" value="0" >
+						<div class="armorcard armor-lt">
+							<div class="flexrow">LT <input type="number" name="attr_armor-current-lt" value="0"></div>
+							<div class="flexrow">MX <input type="number" name="attr_armor-max-lt" value="0"></div>
+						</div>
+						<input type="hidden" name="attr_armor_css-ra" class="armor-damage" value="0" >
+						<div class="armorcard armor-ra">
+							<div class="flexrow">RA <input type="number" name="attr_armor-current-ra" value="0"></div>
+							<div class="flexrow">MX <input type="number" name="attr_armor-max-ra" value="0"></div>
+						</div>
+						<input type="hidden" name="attr_armor_css-la" class="armor-damage" value="0" >
+						<div class="armorcard armor-la">
+							<div class="flexrow">LA <input type="number" name="attr_armor-current-la" value="0"></div>
+							<div class="flexrow">MX <input type="number" name="attr_armor-max-la" value="0"></div>
+						</div>
+						<input type="hidden" name="attr_armor_css-rl" class="armor-damage" value="0" >
+						<div class="armorcard armor-rl">
+							<div class="flexrow">RL <input type="number" name="attr_armor-current-rl" value="0"></div>
+							<div class="flexrow">MX <input type="number" name="attr_armor-max-rl" value="0"></div>
+						</div>
+						<input type="hidden" name="attr_armor_css-ll" class="armor-damage" value="0" >
+						<div class="armorcard armor-ll">
+							<div class="flexrow">LL <input type="number" name="attr_armor-current-ll" value="0"></div>
+							<div class="flexrow">MX <input type="number" name="attr_armor-max-ll" value="0"></div>
+						</div>
+						
+						<div class="reararmor">
+							<h2>Rear Armor</h2>
+							<input type="hidden" name="attr_armor_css-rct" class="armor-damage" value="0" >
+							<div class="armorcard armor-ct">
+								<div class="flexrow">CT <input type="number" name="attr_armor-current-rct" value="0"></div>
+								<div class="flexrow">MX <input type="number" name="attr_armor-max-rct" value="0"></div>
+							</div>
+							<input type="hidden" name="attr_armor_css-rrt" class="armor-damage" value="0" >
+							<div class="armorcard armor-rt">
+								<div class="flexrow">RT <input type="number" name="attr_armor-current-rrt" value="0"></div>
+								<div class="flexrow">MX <input type="number" name="attr_armor-max-rrt" value="0"></div>
+							</div>
+							<input type="hidden" name="attr_armor_css-rlt" class="armor-damage" value="0" >
+							<div class="armorcard armor-lt">
+								<div class="flexrow">LT <input type="number" name="attr_armor-current-rlt" value="0"></div>
+								<div class="flexrow">MX <input type="number" name="attr_armor-max-rlt" value="0"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+
+
+
+<!-- End of BattleMech standalone code -->
+<!-- MISC Mech -->
+
+
+        <table class="MiscellaneousMech1">
+            <tr>
+                <th>Miscellaneous BattleMech Info 1</th>
+                <th>Miscellaneous BattleMech Info 2</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="attr_MISCBM1" value="" /></td>
+                <td><input type="text" name="attr_MISCBM2" value="" /></td>
+            </tr>
+        </table>
+        
+        <fieldset class="repeating-quirks">
+            <tr>
+                <td><input type="text" name="attr_MISCBM1" value="" /></td>
+                <td><input type="text" name="attr_MISCBM2" value="" /></td>
+            </tr>
+        </fieldset>
+
+<!-- DESIGN QUIRKS -->
+<h4>Design Quirks</h4>
+
+                <div class="input-fieldQ1"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:013D23">
+                    <span style="font-size:large">Positive Design Quirks</span><br>
+                    <fieldset class="repeating_Data">
+
+                        <table class="section-table11">
+                            <tr>
+
+                                <th>Notes</th>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <input style="width:480px;" type="text" name="attr_PositiveDesignQuirks1">
+                                </td>
+
+                            </tr>
+                        </table>
+
+                        <br>
+                    </fieldset>
+                </div>
+
+
+                <div class="input-fieldQ2"
+                     style="width:695px;margin-top:8px;padding-top:10px;background-color:#3D1313">
+                    <span style="font-size:large">Negative Design Quirks</span><br>
+                    <fieldset class="repeating_Data">
+
+                        <table class="section-table12">
+                            <tr>
+
+                                <th>Notes</th>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <input style="width:480px;" type="text" name="attr_NegativeDesignQuirks1">
+                                </td>
+
+                            </tr>
+                        </table>
+
+                        <br>
+                    </fieldset>
+                </div>
+
+
+        </table>
+
+
+    </div><!-- BattleMech 1 wrapperEND-->
+
+</div>
+<!-- BattleMech 1 Data END-->
+
+
+
+
+
+<script type="text/worker">
+// run any data migrations
+on("sheet:opened", () => {
+    sheetMigration();
+
+    getAttrs(["btatow_sheet_version"], ({
+        btatow_sheet_version
+    }) => {
+        if (btatow_sheet_version >= 3) {
+            recalculateSkills();
+        }
+    });
+});
+
+
+
+
+	// Tabbed Battlemech Code
+	const mechdisplaylist = ["defense","offense"];
+	
+    mechdisplaylist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                mechdisplay: button
+            });
+        });
+	});
+	
+	// Checkbox Registration
+	const toggleList = ["show"];
+	toggleList.forEach(function(button) {
+    on(`clicked:${button}`, function() {
+		const flag = `${button}_flag`;
+		// Check the current value of the hidden flag.
+		getAttrs([flag], function(v) {
+			// Update the value of the hidden flag to "1" for checked or "0" for unchecked.
+			setAttrs({
+			[flag]: v[flag] !== "1" ? "1" : "0"
+			});
+		});
+		});
+	});
+
+	// Temperature change
+	
+	on("change:temperature-current", function() {
+		getAttrs(
+			[
+				"temperature-current",
+				"heatpen-movement-1",
+				"heatpen-movement-2",
+				"heatpen-movement-3",
+				"heatpen-movement-4",
+				"heatpen-movement-5",
+				"heatpen-firemod-1",
+				"heatpen-firemod-2",
+				"heatpen-firemod-3",
+				"heatpen-firemod-4",
+				"heatpen-shutdown-4",
+				"heatpen-shutdown-6",
+				"heatpen-shutdown-8",
+				"heatpen-shutdown-10",
+				"heatpen-shutdown-auto",
+				"heatpen-ammo-4",
+				"heatpen-ammo-6",
+				"heatpen-ammo-8"
+			],
+		function(temp) {
+			current = parseInt(temp["temperature-current"]) || 0;
+			heats = []
+			heatCount = 0
+
+			for(var key in temp)
+			{
+				if(key == "temperature-current") continue;
+
+				if(parseInt(temp[key]) <= current)
+				{
+					heatCount += 1
+					heats.push(heatCount)
+				}
+			}
+			heats = heats.join(" ")
+
+			console.log(heats)
+			setAttrs({"temperature-rank": heats});
+		});
+	});
+	
+
+	// Armor Damage Colors 
+	const armorendings = ['h', 'ct', 'rt', 'lt', 'ra', 'la', 'rl', 'll', 'rct', 'rrt', 'rlt'];
+	armorendings.forEach(end => {
+		on(`change:armor-current-${end} change:armor-max-${end}`, () => {
+			getAttrs([`armor-current-${end}`, `armor-max-${end}`], values => {
+				const current = parseInt(values[`armor-current-${end}`]) || 0;
+				const max = parseInt(values[`armor-max-${end}`]) || 0;
+				const css = (current === 0) ? 3 : (current < Math.ceil(max/2)) ? 2 : (current < max) ? 1 : 0;
+				setAttrs({
+					[`armor_css-${end}`]: css
+				});
+			});
+		});
+	});
+
+	// Internal Damage Colors 
+	const internalendings = ['head', 'torso_c', 'torso_r', 'torso_l', 'arm_r', 'arm_l', 'leg_r', 'leg_l'];
+	internalendings.forEach(end => {
+		on(`change:internal-current-${end} change:internal-max-${end}`, () => {
+			console.log("Something Changed")
+			getAttrs([`internal-current-${end}`, `internal-max-${end}`], values => {
+				const current = parseInt(values[`internal-current-${end}`]) || 0;
+				const max = parseInt(values[`internal-max-${end}`]) || 0;
+				const css = (current === 0) ? 3 : (current < Math.ceil(max/2)) ? 2 : (current < max) ? 1 : 0;
+				console.log(css)
+				setAttrs({
+					[`internal-css-${end}`]: css
+				});
+			});
+		});
+	});
+
+
+
+
+
+const recalculateSkills = () => {
+    getSectionIDs("skills", ids => {
+        ids.forEach(id => getAttrs(["repeating_skills_" + id + "_skill_xp"], values => {
+            skillXPChanged({
+                newValue: values["repeating_skills_" + id + "_skill_xp"],
+                id
+            })
+        }));
+    });
+}
+
+const STRENGTH_XP = "strength_xp";
+const BODY_XP = "body_xp";
+const REFLEX_XP = "reflex_xp";
+const DEXTERITY_XP = "dexterity_xp";
+const INTELLIGENCE_XP = "intelligence_xp";
+const WILL_XP = "will_xp";
+const CHARISMA_XP = "charisma_xp";
+const EDGE_XP = "edge_xp";
+
+const STRENGTH_LINK = "strength_link";
+const BODY_LINK = "body_link";
+const REFLEX_LINK = "reflex_link";
+const DEXTERITY_LINK = "dexterity_link";
+const INTELLIGENCE_LINK = "intelligence_link";
+const WILL_LINK = "will_link";
+const CHARISMA_LINK = "charisma_link";
+const EDGE_LINK = "edge_link";
+
+// calculate stat values when XP amount changes
+on("change:strength_xp change:body_xp change:reflex_xp change:dexterity_xp change:intelligence_xp change:will_xp change:charisma_xp change:edge_xp", ({
+    sourceAttribute,
+    newValue
+}) => {
+    attributeValue = Math.floor(newValue / 100);
+    attributeLinkedValue = calculateLinkedAttributeValue(attributeValue);
+
+    let attributesToSet = {};
+
+    switch (sourceAttribute) {
+    case STRENGTH_XP:
+        attributesToSet = {
+            strength: attributeValue,
+            strength_link: attributeLinkedValue
+        };
+        break;
+    case BODY_XP:
+        attributesToSet = {
+            body: attributeValue,
+            body_link: attributeLinkedValue
+        };
+        break;
+    case REFLEX_XP:
+        attributesToSet = {
+            reflex: attributeValue,
+            reflex_link: attributeLinkedValue
+        };
+        break;
+    case DEXTERITY_XP:
+        attributesToSet = {
+            dexterity: attributeValue,
+            dexterity_link: attributeLinkedValue
+        };
+        break;
+    case INTELLIGENCE_XP:
+        attributesToSet = {
+            intelligence: attributeValue,
+            intelligence_link: attributeLinkedValue
+        };
+        break;
+    case WILL_XP:
+        attributesToSet = {
+            will: attributeValue,
+            will_link: attributeLinkedValue
+        };
+        break;
+    case CHARISMA_XP:
+        attributesToSet = {
+            charisma: attributeValue,
+            charisma_link: attributeLinkedValue
+        };
+        break;
+    case EDGE_XP:
+        attributesToSet = {
+            edge: attributeValue,
+            edge_link: attributeLinkedValue
+        };
+        break;
+    default:
+        console.error("unknown attribute type passed in to basic attribute on change function");
+        return;
+    }
+
+    setAttrs(attributesToSet, {}, recalculateSkills)
+});
+
+function calculateLinkedAttributeValue(attribute) {
+    if (attribute > 10) {
+        return Math.floor(attribute / 3);
+    } else {
+        if (attribute < 1)
+            return -4;
+        else if (attribute < 2)
+            return -2;
+        else if (attribute < 4)
+            return -1;
+        else if (attribute < 7)
+            return 0;
+        else if (attribute < 10)
+            return 1;
+        else
+            return 2;
+    }
+}
+
+on("change:repeating_skills:skill change:repeating_skills:sub_skill", _ => {
+    getAttrs(["repeating_skills_skill_xp"], ({
+        repeating_skills_skill_xp
+    }) => {
+        skillXPChanged({
+            newValue: repeating_skills_skill_xp
+        });
+    });
+});
+
+// calculate skill modifiers when skill xp changes
+on("change:repeating_skills:skill_xp", skillXPChanged)
+
+// recalculate all skills when learning speed modifier changes
+on("change:learning_speed", recalculateSkills)
+
+function skillXPChanged({
+    id,
+    newValue
+}) {
+    const tieredSkills = [
+        "art",
+        "computers",
+        "interest",
+        "martial",
+        "melee",
+        "prestidigitation"
+    ];
+
+    // When the sheet is opened, or data migrations are run, the skills are retrieved via ID, and thus must have their
+    // ID included in the attribute name when setting attributes.
+    const skillId = id !== undefined ? id + "_" : ""
+
+    const skill = "repeating_skills_" + skillId + "skill";
+    const skillLevel = "repeating_skills_" + skillId + "skill_level";
+    const subSkillAttrName = "repeating_skills_" + skillId + "sub_skill";
+
+    getAttrs([skill, subSkillAttrName, "learning_speed"], values => {
+        const skillName = values[skill]
+        const skillNameLookupKey = skillName.split("_")[0]
+        const subSkill = values[subSkillAttrName]
+
+        let skillAttributesToSet = {};
+
+        skillAttributesToSet[skillLevel] = calculateSkillLevel(Number(newValue), values.learning_speed);
+
+        const skillData = getSkill(
+            skillNameLookupKey,
+            skillAttributesToSet[skillLevel],
+            tieredSkills.includes(skillNameLookupKey)
+        );
+
+        skillAttributesToSet["repeating_skills_" + skillId + "skill_tnc"] = skillData.targetNumber + "/" + skillData.complexity;
+        skillAttributesToSet["repeating_skills_" + skillId + "target_number"] = skillData.targetNumber;
+
+        getAttrs(skillData.linkedAttributes, values => {
+            skillAttributesToSet["repeating_skills_" + skillId + "skill_modifierRoll"] = Object.values(values)
+                .reduce((total, num) => Number(total) + Number(num)) + Number(skillAttributesToSet[skillLevel]);
+
+            skillAttributesToSet["repeating_skills_" + skillId + "skill_linked_attributes"] = skillData.linkedAttributes
+                .map(linkAtr => getLinkedAttributeDisplayName(linkAtr) + " (" + values[linkAtr] + ")")
+                .join(" + ");
+
+            skillAttributesToSet["repeating_skills_" + skillId + "skill_roll_value"] =
+                getSkillDisplayName(skillData, skillName, subSkill) + " Skill Check:\n" +
+                "Margin of Success: [[2d6 + @{skill_modifierRoll}[MOD] - @{target_number}[TN]]]";
+
+            setAttrs(skillAttributesToSet, {}, () => {});
+        });
+    });
+}
+
+function calculateSkillLevel(skillXP, learningSpeedModifier) {
+    skillXP = Number(skillXP);
+    learningSpeedModifier = Number(learningSpeedModifier);
+
+    if (skillXP < (30 + (learningSpeedModifier * 3))) {
+        return 0;
+    }
+
+    if (skillXP >= (570 + (learningSpeedModifier * 57))) {
+        return 10;
+    }
+
+    let currentSkillXP = skillXP - (20 + (learningSpeedModifier * 2));
+
+    for (i = 1; i < 11; i++) {
+        if (currentSkillXP < i * (10 + learningSpeedModifier)) {
+            return i - 1;
+        }
+
+        currentSkillXP -= (i * (10 + learningSpeedModifier));
+    }
+
+    console.error("should never hit this line, this means the skill XP is not less than level 1, not greater than level 10, but also not within a level range.");
+    return undefined;
+}
+
+function getSkillDisplayName(skill, skillDisplayNameKey, subSkill) {
+    if (skill.subSkills === true) {
+        return skill.displayName[skillDisplayNameKey] + "/" + subSkill;
+    }
+
+    if (typeof subSkill === "string" && subSkill != "") {
+        return skill.displayName[skillDisplayNameKey] + " (" + subSkill + ")";
+    }
+
+    return skill.displayName[skillDisplayNameKey];
+}
+
+const skillsList = {
+    "acrobatics": {
+        "linkedAttributes": [REFLEX_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "acrobatics_free_fall": "Acrobatics/Free-Fall",
+            "acrobatics_gymnastics": "Acrobatics/Gymnastics"
+        }
+    },
+    "acting": {
+        "linkedAttributes": [CHARISMA_LINK],
+        "targetNumber": 8,
+        "complexity": "CB",
+        "subSkills": false,
+        "displayName": {
+            "acting": "Acting"
+        }
+    },
+    "administration": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "administration": "Administration"
+        }
+    },
+    "animal": {
+        "linkedAttributes": [WILL_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "animal_handling_herding": "Animal Handling/Herding",
+            "animal_handling_riding": "Animal Handling/Riding",
+            "animal_handling_training": "Animal Handling/Training"
+        }
+    },
+    "appraisal": {
+        "linkedAttributes": [INTELLIGENCE_LINK],
+        "targetNumber": 8,
+        "complexity": "CB",
+        "subSkills": false,
+        "displayName": {
+            "appraisal": "Appraisal"
+        }
+    },
+    "archery": {
+        "linkedAttributes": [DEXTERITY_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "archery": "Archery"
+        }
+    },
+    "artillery": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "artillery": "Artillery"
+        }
+    },
+    "career": {
+        "linkedAttributes": [INTELLIGENCE_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": true,
+        "displayName": {
+            "career": "Career"
+        }
+    },
+    "climbing": {
+        "linkedAttributes": [DEXTERITY_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "climbing": "Climbing"
+        }
+    },
+    "communications": {
+        "linkedAttributes": [INTELLIGENCE_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "communications_black_box": "Communications/Black Box",
+            "communications_conventional_em": "Communications/Conventional (EM)",
+            "communications_hyperpulse_generator": "Communications/Hyperpulse Generator"
+        }
+    },
+    "cryptography": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "cryptography": "Cryptography"
+        }
+    },
+    "demolitions": {
+        "linkedAttributes": [DEXTERITY_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "demolitions": "Demolitions"
+        }
+    },
+    "disguise": {
+        "linkedAttributes": [CHARISMA_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "disguise": "Disguise"
+        }
+    },
+    "driving": {
+        "linkedAttributes": [REFLEX_LINK, DEXTERITY_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "driving_ground_vehicles": "Driving/Ground Vehicles",
+            "driving_rail_vehicles": "Driving/Rail Vehicles",
+            "driving_sea_vehicles": "Driving/Sea Vehicles"
+        }
+    },
+    "escape": {
+        "linkedAttributes": [STRENGTH_LINK, DEXTERITY_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "escape_artist": "Escape Artist"
+        }
+    },
+    "forgery": {
+        "linkedAttributes": [DEXTERITY_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "forgery": "Forgery"
+        }
+    },
+    "gunnery": {
+        "linkedAttributes": [REFLEX_LINK, DEXTERITY_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "gunnery_aerospace": "Gunnery/Aerospace",
+            "gunnery_air_vehicle": "Gunnery/Air Vehicle",
+            "gunnery_battlesuit": "Gunnery/Battlesuit",
+            "gunnery_ground_vehicle": "Gunnery/Ground Vehicle",
+            "gunnery_mech": "Gunnery/'Mech",
+            "gunnery_protomech": "Gunnery/ProtoMech",
+            "gunnery_sea_vehicle": "Gunnery/Sea Vehicle",
+            "gunnery_spacecraft": "Gunnery/Spacecraft",
+            "gunnery_turret": "Gunnery/Turret"
+        }
+    },
+    "interrogation": {
+        "linkedAttributes": [WILL_LINK, CHARISMA_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "interrogation": "Interrogation"
+        }
+    },
+    "investigation": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "investigation": "Investigation"
+        }
+    },
+    "language": {
+        "linkedAttributes": [INTELLIGENCE_LINK, CHARISMA_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": true,
+        "displayName": {
+            "language": "Language"
+        }
+    },
+    "leadership": {
+        "linkedAttributes": [WILL_LINK, CHARISMA_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "leadership": "Leadership"
+        }
+    },
+    "medtech": {
+        "linkedAttributes": [INTELLIGENCE_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "medtech_general": "MedTech/General",
+            "medtech_veterinary": "MedTech/Veterinary"
+        }
+    },
+    "navigation": {
+        "linkedAttributes": [INTELLIGENCE_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "navigation_air": "Navigation/Air",
+            "navigation_ground": "Navigation/Ground",
+            "navigation_kf_jump": "Navigation/K-F Jump",
+            "navigation_sea": "Navigation/Sea",
+            "navigation_space": "Navigation/Space"
+        }
+    },
+    "negotiation": {
+        "linkedAttributes": [CHARISMA_LINK],
+        "targetNumber": 8,
+        "complexity": "CB",
+        "subSkills": false,
+        "displayName": {
+            "negotiation": "Negotiation"
+        }
+    },
+    "perception": {
+        "linkedAttributes": [INTELLIGENCE_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "perception": "Perception"
+        }
+    },
+    "piloting": {
+        "linkedAttributes": [REFLEX_LINK, DEXTERITY_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "piloting_aerospace": "Piloting/Aerospace",
+            "piloting_air_vehicle": "Piloting/Air Vehicle",
+            "piloting_battlesuit": "Piloting/Battlesuit",
+            "piloting_ground_vehicle": "Piloting/Ground Vehicle",
+            "piloting_mech": "Piloting/'Mech",
+            "piloting_protomech": "Piloting/ProtoMech",
+            "piloting_rail_vehicle": "Piloting/Rail Vehicle",
+            "piloting_sea_vehicle": "Piloting/Sea Vehicle",
+            "piloting_spacecraft": "Piloting/Spacecraft"
+        }
+    },
+    "protocol": {
+        "linkedAttributes": [WILL_LINK, CHARISMA_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": true,
+        "displayName": {
+            "protocol": "Protocol"
+        }
+    },
+    "running": {
+        "linkedAttributes": [REFLEX_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "running": "Running"
+        }
+    },
+    "science": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": true,
+        "displayName": {
+            "science": "Science"
+        }
+    },
+    "security": {
+        "linkedAttributes": [DEXTERITY_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "security_systems_electronic": "Security Systems/Electronic",
+            "security_systems_mechanical": "Security Systems/Mechanical"
+        }
+    },
+    "sensor": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "sensor_operations": "Sensor Operations"
+        }
+    },
+    "small": {
+        "linkedAttributes": [DEXTERITY_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "small_arms": "Small Arms"
+        }
+    },
+    "stealth": {
+        "linkedAttributes": [REFLEX_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "stealth": "Stealth"
+        }
+    },
+    "strategy": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "strategy": "Strategy"
+        }
+    },
+    "streetwise": {
+        "linkedAttributes": [CHARISMA_LINK],
+        "targetNumber": 8,
+        "complexity": "CB",
+        "subSkills": true,
+        "displayName": {
+            "streetwise": "Streetwise"
+        }
+    },
+    "support": {
+        "linkedAttributes": [DEXTERITY_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "support_weapons": "Support Weapons"
+        }
+    },
+    "surgery": {
+        "linkedAttributes": [DEXTERITY_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "surgery_general": "Surgery/General",
+            "surgery_veterinary": "Surgery/Veterinary"
+        }
+    },
+    "survival": {
+        "linkedAttributes": [BODY_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": true,
+        "displayName": {
+            "survival": "Survival"
+        }
+    },
+    "swimming": {
+        "linkedAttributes": [STRENGTH_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "swimming": "Swimming"
+        }
+    },
+    "tactics": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "tactics_air": "Tactics/Air",
+            "tactics_infantry": "Tactics/Infantry",
+            "tactics_land": "Tactics/Land",
+            "tactics_sea": "Tactics/Sea",
+            "tactics_space": "Tactics/Space"
+        }
+    },
+    "technician": {
+        "linkedAttributes": [DEXTERITY_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "technician_aeronautics": "Technician/Aeronautics",
+            "technician_cybernetics": "Technician/Cybernetics",
+            "technician_electronic": "Technician/Electronic",
+            "technician_jets": "Technician/Jets",
+            "technician_mechanical": "Technician/Mechanical",
+            "technician_myomer": "Technician/Myomer",
+            "technician_nuclear": "Technician/Nuclear",
+            "technician_weapons": "Technician/Weapons"
+        }
+    },
+    "thrown": {
+        "linkedAttributes": [DEXTERITY_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "thrown_weapons_blades": "Thrown Weapons/Blades",
+            "thrown_weapons_blunt_weapons": "Thrown Weapons/Blunt Weapons"
+        }
+    },
+    "tracking": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "tracking_urban": "Tracking/Urban",
+            "tracking_wilds": "Tracking/Wilds"
+        }
+    },
+    "training": {
+        "linkedAttributes": [INTELLIGENCE_LINK, CHARISMA_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "training": "Training"
+        }
+    },
+    "zero": {
+        "linkedAttributes": [REFLEX_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "zero_g_operations": "Zero-G Operations"
+        }
+    }
+};
+
+const tieredSkillsBasic = {
+    "art": {
+        "linkedAttributes": [DEXTERITY_LINK],
+        "targetNumber": 8,
+        "complexity": "CB",
+        "subSkills": true,
+        "displayName": {
+            "art": "Art"
+        }
+    },
+    "computers": {
+        "linkedAttributes": [INTELLIGENCE_LINK],
+        "targetNumber": 8,
+        "complexity": "CB",
+        "subSkills": false,
+        "displayName": {
+            "computers": "Computers"
+        }
+    },
+    "interest": {
+        "linkedAttributes": [INTELLIGENCE_LINK],
+        "targetNumber": 8,
+        "complexity": "CB",
+        "subSkills": true,
+        "displayName": {
+            "interest": "Interest"
+        }
+    },
+    "martial": {
+        "linkedAttributes": [REFLEX_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "martial_arts": "Martial Arts"
+        }
+    },
+    "melee": {
+        "linkedAttributes": [DEXTERITY_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "melee_weapons": "Melee Weapons"
+        }
+    },
+    "prestidigitation": {
+        "linkedAttributes": [DEXTERITY_LINK],
+        "targetNumber": 7,
+        "complexity": "SB",
+        "subSkills": false,
+        "displayName": {
+            "prestidigitation_pick_pocket": "Prestidigitation/Pick Pocket",
+            "prestidigitation_quickdraw": "Prestidigitation/Quickdraw",
+            "prestidigitation_sleight_of_hand": "Prestidigitation/Sleight of Hand"
+        }
+    }
+};
+
+const tieredSkillsAdvanced = {
+    "art": {
+        "linkedAttributes": [DEXTERITY_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": true,
+        "displayName": {
+            "art": "Art"
+        }
+    },
+    "computers": {
+        "linkedAttributes": [DEXTERITY_LINK, INTELLIGENCE_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": false,
+        "displayName": {
+            "computers": "Computers"
+        }
+    },
+    "interest": {
+        "linkedAttributes": [INTELLIGENCE_LINK, WILL_LINK],
+        "targetNumber": 9,
+        "complexity": "CA",
+        "subSkills": true,
+        "displayName": {
+            "interest": "Interest"
+        }
+    },
+    "martial": {
+        "linkedAttributes": [REFLEX_LINK, DEXTERITY_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "martial_arts": "Martial Arts"
+        }
+    },
+    "melee": {
+        "linkedAttributes": [REFLEX_LINK, DEXTERITY_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "melee_weapons": "Melee Weapons"
+        }
+    },
+    "prestidigitation": {
+        "linkedAttributes": [REFLEX_LINK, DEXTERITY_LINK],
+        "targetNumber": 8,
+        "complexity": "SA",
+        "subSkills": false,
+        "displayName": {
+            "prestidigitation_pick_pocket": "Prestidigitation/Pick Pocket",
+            "prestidigitation_quickdraw": "Prestidigitation/Quickdraw",
+            "prestidigitation_sleight_of_hand": "Prestidigitation/Sleight of Hand"
+        }
+    }
+};
+
+function getSkill(skillName, skillLevel, tieredSkill) {
+    skillName = String(skillName);
+    skillLevel = Number(skillLevel);
+
+    if (tieredSkill) {
+        if (skillLevel <= 3) {
+            return tieredSkillsBasic[skillName]
+        } else {
+            return tieredSkillsAdvanced[skillName]
+        }
+    } else {
+        return skillsList[skillName]
+    }
+}
+
+function getLinkedAttributeDisplayName(linkedAttributeName) {
+    const linkedAttributeDisplayNames = {};
+    linkedAttributeDisplayNames[STRENGTH_LINK] = "STR";
+    linkedAttributeDisplayNames[BODY_LINK] = "BOD";
+    linkedAttributeDisplayNames[REFLEX_LINK] = "RFL";
+    linkedAttributeDisplayNames[DEXTERITY_LINK] = "DEX";
+    linkedAttributeDisplayNames[INTELLIGENCE_LINK] = "INT";
+    linkedAttributeDisplayNames[WILL_LINK] = "WIL";
+    linkedAttributeDisplayNames[CHARISMA_LINK] = "CHA";
+    linkedAttributeDisplayNames[EDGE_LINK] = "EDG";
+
+    return linkedAttributeDisplayNames[linkedAttributeName];
+}
+
+function sheetMigration() {
+    console.log("Running sheet data migration");
+
+    let sheetVersionAttributeName = "btatow_sheet_version";
+    let currentVersion = 3;
+
+    getAttrs([sheetVersionAttributeName], sheetVersionAttribute => {
+        let sheetVersion = Number(sheetVersionAttribute[sheetVersionAttributeName])
+        // Check if we should do the migration
+        if (isNaN(sheetVersion)) {
+            console.error("No sheet version defined, unable to determine if sheet data needs to be migrated.");
+            return;
+        }
+
+        if (sheetVersion === currentVersion) {
+            console.log("No migration needed");
+            return;
+        }
+
+        switch (sheetVersion) {
+        case 1:
+            migrateFrom1To2();
+            break;
+        case 2:
+            migrateFrom2To3();
+            break;
+        default:
+            break;
+        }
+    });
+}
+
+// Migrate attribute data from version 1 to version 2
+function migrateFrom1To2() {
+    const oldAttributeNames = [
+        "STRXP",
+        "BODXP",
+        "RFLXP",
+        "DEXXP",
+        "INTXP",
+        "WILXP",
+        "CHAXP",
+        "EDGXP"
+    ];
+    const newAttributeNames = [
+        "strength_xp",
+        "body_xp",
+        "reflex_xp",
+        "dexterity_xp",
+        "intelligence_xp",
+        "will_xp",
+        "charisma_xp",
+        "edge_xp"
+    ];
+
+    let newAttributes = {};
+
+    console.log("Starting migration from version 1 to version 2.");
+
+    getAttrs(oldAttributeNames, attributes => {
+        console.debug("Attributes fetched: " + JSON.stringify(attributes));
+        for (let i = 0; i < oldAttributeNames.length; i++) {
+            if (attributes[oldAttributeNames[i]] !== undefined) {
+                console.debug("Attributes[" + oldAttributeNames[i] + "]: " + attributes[oldAttributeNames[i]]);
+                newAttributes[newAttributeNames[i]] = attributes[oldAttributeNames[i]];
+            }
+        }
+
+        console.debug("New attributes: " + JSON.stringify(newAttributes));
+
+        setAttrs(newAttributes, {}, () => {
+            setAttrs({
+                btatow_sheet_version: "2"
+            }, {}, () => {
+                console.log("Sheet data migration completed");
+            });
+        });
+    });
+}
+
+// Migrate skills data from version 2 to version 3
+function migrateFrom2To3() {
+    console.log("Starting migration from version 2 to version 3.");
+
+    getSectionIDs("skills", ids => {
+        let skillsUpdated = 0;
+
+        ids.forEach(id => {
+            const oldSkillDataNames = {
+                skill: "repeating_skills_" + id + "_skill",
+                subSkill: "repeating_skills_" + id + "_skillNotes",
+                xp: "repeating_skills_" + id + "_skillXP"
+            };
+            const newSkillDataNames = {
+                skill: "repeating_skills_" + id + "_skill",
+                subSkill: "repeating_skills_" + id + "_sub_skill",
+                xp: "repeating_skills_" + id + "_skill_xp"
+            };
+            getAttrs(Object.values(oldSkillDataNames), oldSkillValues => {
+                const oldSkillName = oldSkillValues[oldSkillDataNames.skill];
+                const oldSkillSubSkillName = oldSkillValues[oldSkillDataNames.subSkill];
+
+                if (oldSkillName === undefined || oldSkillValues[oldSkillDataNames.xp] === undefined) {
+                    console.error("Old skill data is missing values, unable to migrate.\n" + JSON.stringify(oldSkillValues));
+                    skillsUpdate++;
+                    return;
+                }
+
+                let parsedSkillName = oldSkillName.toLowerCase()
+                    .replace(" ", "_")
+                    .replace("-", "_");
+
+                const skillFirstName = parsedSkillName.split("_")[0];
+
+                let skillData = {};
+                const newSkillValues = {};
+
+                if (skillFirstName in skillsList) {
+                    skillData = skillsList[skillFirstName];
+                } else if (skillFirstName in tieredSkillsBasic) {
+                    skillData = tieredSkillsBasic[skillFirstName];
+                } else if (skillFirstName.substring(0, skillFirstName.length - 1) in tieredSkillsBasic) {
+                    skillData = tieredSkillsBasic[skillFirstName.substring(0, skillFirstName.length - 1)];
+                    parsedSkillName = parsedSkillName.substring(0, parsedSkillName.length - 1);
+                } else {
+                    console.error("Unable to migrate skill data. Old values are: " + JSON.stringify(oldSkillValues));
+                    skillsUpdated++;
+                    return;
+                }
+
+                let skillName = "";
+                let displaySubSkill = true;
+
+                if (parsedSkillName in skillData.displayName) {
+                    skillName = parsedSkillName;
+                } else if (parsedSkillName.substring(0, parsedSkillName.length - 1) in skillData.displayName) {
+                    skillName = parsedSkillName.substring(0, parsedSkillName.length - 1);
+                } else if (oldSkillSubSkillName === undefined) {
+                    console.error("Unable to identify skill. Old skill name: " + oldSkillName);
+                    skillsUpdated++;
+                    return;
+                } else {
+                    const parsedSubSkillName = oldSkillSubSkillName.trim()
+                        .replace("\'", "")
+                        .replace("`", "")
+                        .replace("-", "_")
+                        .replace("/", "_")
+                        .toLowerCase();
+
+                    const skillWithSubSkill = parsedSkillName + "_" + parsedSubSkillName;
+
+                    if (skillWithSubSkill in skillData.displayName) {
+                        skillName = skillWithSubSkill;
+                        displaySubSkill = false;
+                    } else {
+                        console.error("Unable to identify skill. Old skill name and notes: " + oldSkillName + " " + oldSkillSubSkillName);
+                        skillsUpdated++;
+                        return;
+                    }
+                }
+
+                newSkillValues[newSkillDataNames.skill] = skillName;
+                if (displaySubSkill && oldSkillSubSkillName !== undefined) {
+                    newSkillValues[newSkillDataNames.subSkill] = oldSkillSubSkillName;
+                }
+                newSkillValues[newSkillDataNames.xp] = oldSkillValues[oldSkillDataNames.xp];
+
+                setAttrs(newSkillValues, {}, () => {
+                    skillsUpdated++;
+
+                    if (skillsUpdated === ids.length) {
+                        setAttrs({
+                            btatow_sheet_version: 3
+                        }, {}, () => {
+                            console.log("Sheet migrated from version 2 to version 3.");
+                            recalculateSkills();
+                        });
+                    }
+                });
+            });
+        });
+    });
+}
+
+</script>
